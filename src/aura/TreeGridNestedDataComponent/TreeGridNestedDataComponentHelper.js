@@ -4,7 +4,9 @@
 
 ({
     getAcctContacts : function (component, event, helper) {
-        var action = component.get("c.getAccountContacts");
+        // make sure the parameter matches the Apex Server side controller method
+        // name exactly
+        var action = component.get("c.getTreeData");
         action.setCallback(this, function(response) {
             var state = response.getState();
             if (state === "SUCCESS") {

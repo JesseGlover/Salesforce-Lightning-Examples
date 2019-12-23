@@ -1,0 +1,42 @@
+<!--
+ - Created by Jesse Glover on 12/23/19.
+ -->
+
+<!-- The Server-side controller here points to the Apex class of the same name -->
+<!-- force:appHostable allows this component to be used as a custom tab in Lightning Experience or the Salesforce mobile app -->
+<!-- flexipage:availableForAllPageTypes makes this component available for record pages and any other type of page-->
+<aura:component controller="TreeGridExamples" implements="force:appHostable,flexipage:availableForAllPageTypes">
+
+    <!-- ATTRIBUTES allow information to be passed from component controller to component-->
+    <aura:attribute name="gridCols" type="Object[]" />
+    <!-- gridCols and gridData stores the type of Object as an array to be passed around from controller to this component. -->
+    <aura:attribute name="gridData" type="Object[]" />
+    <!-- gridExpandedRows stores a single object of the type of Object to be passed around -->
+    <aura:attribute name="gridExpandedRows" type="Object" />
+
+    <!-- HANDLERS are events. -->
+    <!--This event's name is init, it passes the value of this component around
+     and the action is set to this component's controller method called doInit-->
+    <aura:handler name="init" value="{! this }" action="{! c.doInit }"/>
+
+    <!-- DISPLAY according to the layout element -->
+    <!-- A grid that can display multiple levels of data within the tree data structure -->
+    <!-- data is data stored by the  gridData attribute -->
+    <!-- columns is data stored by the gridCols attribute -->
+    <!-- hideCheckboxColumn, if the value is true, hides the checkboxes along the columns -->
+    <!-- The KeyIdField, sets the data key type. Id, Name, ect -->
+    <!-- The column minimum and maximum width cannot be lower than 0 -->
+    <!-- rowNumberOffset, Changes the starting index value from the data array -->
+    <!-- showRowNumberColumn is a boolean. True means that it will show the row numbers -->
+    <lightning:treeGrid
+            columns="{! v.gridCols }"
+            data="{! v.gridData }"
+            hideCheckboxColumn="true"
+            keyField="id"
+            onrowaction="{!c.onRowSelect}"
+            minColumnWidth="1"
+            maxColumnWidth="300"
+            rowNumberOffset="0"
+            showRowNumberColumn="true"
+    />
+</aura:component>

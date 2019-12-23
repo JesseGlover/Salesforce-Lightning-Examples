@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ContentSettings xmlns="http://soap.sforce.com/2006/04/metadata">
+    <enableChatterFileLink>true</enableChatterFileLink>
+    <enableContent>true</enableContent>
+    <enableContentAutoAssign>true</enableContentAutoAssign>
+    <enableContentDistForPortalUsers>false</enableContentDistForPortalUsers>
+    <enableContentDistPwOptionsBit1>true</enableContentDistPwOptionsBit1>
+    <enableContentDistPwOptionsBit2>true</enableContentDistPwOptionsBit2>
+    <enableContentDistribution>true</enableContentDistribution>
+    <enableContentSupportMultiLanguage>false</enableContentSupportMultiLanguage>
+    <enableContentWorkspaceAccess>true</enableContentWorkspaceAccess>
+    <enableFileShareSetByRecord>false</enableFileShareSetByRecord>
+    <enableFilesUsrShareNetRestricted>false</enableFilesUsrShareNetRestricted>
+    <enableJPGPreviews>false</enableJPGPreviews>
+    <enableLibraryManagedFiles>false</enableLibraryManagedFiles>
+    <enableSiteGuestUserToUploadFiles>false</enableSiteGuestUserToUploadFiles>
+    <enableUploadFilesOnAttachments>false</enableUploadFilesOnAttachments>
+    <skipContentAssetTriggers>false</skipContentAssetTriggers>
+    <skipContentAssetTriggersOnDeploy>true</skipContentAssetTriggersOnDeploy>
+</ContentSettings>

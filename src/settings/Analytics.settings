@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<AnalyticsSettings xmlns="http://soap.sforce.com/2006/04/metadata">
+    <alwaysGenPreviews>false</alwaysGenPreviews>
+    <analyticsAdoptionMetadata>false</analyticsAdoptionMetadata>
+    <canAccessAnalyticsViaAPI>false</canAccessAnalyticsViaAPI>
+    <canAnnotateDashboards>false</canAnnotateDashboards>
+    <canEnableSavedView>true</canEnableSavedView>
+    <canExploreDataConversationally>false</canExploreDataConversationally>
+    <canShareAppsWithCommunities>false</canShareAppsWithCommunities>
+    <canSubscribeDashboardWidgets>false</canSubscribeDashboardWidgets>
+    <canViewThumbnailAssets>false</canViewThumbnailAssets>
+    <enableAnalyticsSubtotals>false</enableAnalyticsSubtotals>
+    <enableAutoCompleteCombo>true</enableAutoCompleteCombo>
+    <enableDashboardComponentSnapshot>false</enableDashboardComponentSnapshot>
+    <enableDashboardFlexiTable>true</enableDashboardFlexiTable>
+    <enableEmailReportsToPortalUsers>false</enableEmailReportsToPortalUsers>
+    <enableFloatingReportHeaders>true</enableFloatingReportHeaders>
+    <enableInsights>true</enableInsights>
+    <enableLightningReportBuilder>false</enableLightningReportBuilder>
+    <enableLotusNotesImages>false</enableLotusNotesImages>
+    <enableMassEnableReportBuilder>true</enableMassEnableReportBuilder>
+    <enableNewChartsEngine>true</enableNewChartsEngine>
+    <enableRemoveFooterForRepDisplay>false</enableRemoveFooterForRepDisplay>
+    <enableRemoveFooterFromRepExp>false</enableRemoveFooterFromRepExp>
+    <enableReportFieldToFieldPref>false</enableReportFieldToFieldPref>
+    <enableReportUniqueRowCountPref>false</enableReportUniqueRowCountPref>
+    <enableSFXJoinedReportsEnable>false</enableSFXJoinedReportsEnable>
+    <enableUseOldChartsLookAndFeel>false</enableUseOldChartsLookAndFeel>
+    <enableWaveReplication>false</enableWaveReplication>
+    <enableWaveSharingInheritance>false</enableWaveSharingInheritance>
+    <enableWaveTemplate>false</enableWaveTemplate>
+    <enableWaveTrendedDatasetCleanup>false</enableWaveTrendedDatasetCleanup>
+</AnalyticsSettings>

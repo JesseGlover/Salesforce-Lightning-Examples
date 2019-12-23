@@ -25,6 +25,9 @@
                     data[i].IdURL='/'+data[i].Id;
                     // set the data's children elements in the tree to be contact data
                     data[i]._children = data[i].Contacts;
+                    // by doing the above steps and below steps, the url is now
+                    // clickable and will allow for navigation to the lightning pages
+                    // associated.
                 }
             }
             // store the results in the gridData attribute

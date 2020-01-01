@@ -12,7 +12,16 @@ import {LightningElement, track, wire} from 'lwc';
 import getTreeGridData from '@salesforce/apex/AccountContactTableController.getAccountContact';
 
 export default class AccountContactTreeGridLwc extends LightningElement {
+    @track page = 1; //this is initialize for 1st page
+    @track startingRecord = 1; //start record position per page
+    @track endingRecord = 0; //end record position per page
+    @track pageSize = 5; //default value we are assigning
+    @track totalRecountCount = 0; //total record count received from all retrieved records
+    @track totalPage = 0; //total number of page is needed to display all records
+    @track previousIsDisabled = false;
+    @track nextIsDisabled = false;
     @track error;
+    @track sourceData;
     /** @track is used to rerender a property's value when it changes */
     @track paginationList;
     /** Setup for grid columns is very similar in approach to Aura components
@@ -43,10 +52,15 @@ export default class AccountContactTreeGridLwc extends LightningElement {
             var source =
                 JSON.parse(JSON.stringify(data).split
                 ('subQueries').join('_children'));
-            // Logging to the console to showcase that the data is there
-            console.log('Data Source results ' + source);
-            // set's the paginationList value to be our source value
-            this.paginationList = source;
+            this.sourceData = source;
+            this.totalRecountCount = source.length;
+            this.totalPage = Math.ceil(this.totalRecountCount / this.pageSize); //here it is 5
+
+            //initialize data to be displayed ----------->
+            //slice will take 0th element and ends with 5, but it doesn't include 5th element
+            //so 0 to 4th rows will be display in the table
+            this.paginationList = this.sourceData.slice(0, this.pageSize);
+            this.endingRecord = this.pageSize;
 
         }
         else if (error) {
@@ -57,4 +71,52 @@ export default class AccountContactTreeGridLwc extends LightningElement {
             this.paginationList = undefined;
         }
     }
+
+    //clicking on previous button this method will be called
+    previousHandler(event) {
+        if (this.page > 1) {
+            this.page = this.page - 1; //decrease page by 1
+        }
+        if (this.page <= 1) {
+            this.previousIsDisabled = true;
+        }
+
+        const selectedEvent = new CustomEvent('selected',
+            { detail: this.displayRecordPerPage(this.page)});
+        dispatchEvent(selectedEvent);
+    }
+
+    //clicking on next button this method will be called
+    nextHandler(event) {
+        if((this.page < this.totalPage) && this.page !== this.totalPage){
+            this.page = this.page + 1; //increase page by 1
+
+        }
+        this.nextIsDisabled = this.page === this.endingRecord;
+        const selectedEvent = new CustomEvent('selected',
+            { detail: this.displayRecordPerPage(this.page)});
+        dispatchEvent(selectedEvent);
+    }
+
+    //this method displays records page by page
+    displayRecordPerPage(page){
+
+        /*let's say for 2nd page, it will be => "Displaying 6 to 10 of 23 records. Page 2 of 5"
+        page = 2; pageSize = 5; startingRecord = 5, endingRecord = 10
+        so, slice(5,10) will give 5th to 9th records.
+        */
+        this.startingRecord = ((page -1) * this.pageSize) ;
+        this.endingRecord = (this.pageSize * page);
+
+        this.endingRecord = (this.endingRecord > this.totalRecountCount)
+            ? this.totalRecountCount : this.endingRecord;
+
+        this.paginationList = this.sourceData.slice(this.startingRecord, this.endingRecord);
+
+        //increment by 1 to display the startingRecord count,
+        //so for 2nd page, it will show "Displaying 6 to 10 of 23 records. Page 2 of 5"
+        this.startingRecord = this.startingRecord + 1;
+    }
+
+
 }

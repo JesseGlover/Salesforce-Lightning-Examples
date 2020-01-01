@@ -16,10 +16,12 @@ export default class AccountContactTreeGridLwc extends LightningElement {
     /** @track is used to rerender a property's value when it changes */
     @track paginationList;
     /** Setup for grid columns is very similar in approach to Aura components
-     * just needs the @track to work for the most part */
+     * just needs the @track to work for the most part
+     * be absolutely certain that the fieldName matches the
+     * Server-side code's AuraEnabled properties */
     @track gridColumns = [{
-        label: 'Id', fieldName: 'Id', type: 'text'},
-        {label: 'Name', fieldName: 'Name', type: 'text'}
+        label: 'Id', fieldName: 'queriedId', type: 'text'},
+        {label: 'Name', fieldName: 'queriedName', type: 'text'}
     ];
 
     /** @wire is calling the server side function from our Apex Class

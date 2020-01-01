@@ -5,7 +5,7 @@
 <!-- The Server-side controller here points to the Apex class of the same name -->
 <!-- force:appHostable allows this component to be used as a custom tab in Lightning Experience or the Salesforce mobile app -->
 <!-- flexipage:availableForAllPageTypes makes this component available for record pages and any other type of page-->
-<aura:component controller="TreeGridExamples" implements="force:appHostable,flexipage:availableForAllPageTypes">
+<aura:component controller="TreeGridWrapperExample" implements="force:appHostable,flexipage:availableForAllPageTypes">
 
     <!-- ATTRIBUTES allow information to be passed from component controller to component-->
     <aura:attribute name="gridCols" type="Object[]" />

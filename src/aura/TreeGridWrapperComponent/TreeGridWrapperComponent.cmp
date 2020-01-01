@@ -1,0 +1,17 @@
+<!--
+ - Created by gamedevmadeeasy on 12/24/19.
+ -->
+
+<aura:component implements="force:appHostable,flexipage:availableForAllPageTypes"
+                controller="TreeGridWrapperExample">
+    <aura:handler name="init" value="{!this}" action="{!c.doInit}" />
+    <aura:attribute name="gridColumns" type="List" />
+    <aura:attribute name="gridData" type="Object" />
+    <aura:attribute name="gridExpandedRows" type="Object" />
+
+    <lightning:treeGrid columns="{! v.gridColumns }"
+                        data="{! v.gridData }"
+                        keyField="name"
+                        aura:id="mytree"
+    />
+</aura:component>

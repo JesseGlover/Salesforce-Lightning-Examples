@@ -1,0 +1,15 @@
+<!--
+ - Created by gamedevmadeeasy on 1/1/20.
+ -->
+
+<!-- Account Contact Tree Grid Lwc -->
+<template>
+    <lightning-tree-grid
+            key-field="name"
+            columns={gridColumns}
+            data={paginationList}
+            hide-checkbox-column="true"
+            min-column-width="100"
+            resize-column-disabled="true">
+    </lightning-tree-grid>
+</template>

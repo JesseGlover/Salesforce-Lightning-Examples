@@ -18,10 +18,10 @@ export default class AccountContactTreeGridLwc extends LightningElement {
     @track pageSize = 5; //default value we are assigning
     @track totalRecountCount = 0; //total record count received from all retrieved records
     @track totalPage = 0; //total number of page is needed to display all records
-    @track previousIsDisabled = false;
-    @track nextIsDisabled = false;
-    @track error;
-    @track sourceData;
+    @track previousIsDisabled = false; // previous button disabled set to false by default
+    @track nextIsDisabled = false; // next button disabled set to false by default
+    @track error; // stores error information
+    @track sourceData; // stores the data from the apex controller
     /** @track is used to rerender a property's value when it changes */
     @track paginationList;
     /** Setup for grid columns is very similar in approach to Aura components
@@ -52,9 +52,14 @@ export default class AccountContactTreeGridLwc extends LightningElement {
             var source =
                 JSON.parse(JSON.stringify(data).split
                 ('subQueries').join('_children'));
+            // sets the source data to be the source
             this.sourceData = source;
+            // sets the total count to be the length of source
             this.totalRecountCount = source.length;
-            this.totalPage = Math.ceil(this.totalRecountCount / this.pageSize); //here it is 5
+            // some math to calculate the total page
+            // rounds the number to the nearest whole number
+            // total count divided by the page size. Results in 5
+            this.totalPage = Math.ceil(this.totalRecountCount / this.pageSize);
 
             //initialize data to be displayed ----------->
             //slice will take 0th element and ends with 5, but it doesn't include 5th element
@@ -72,34 +77,38 @@ export default class AccountContactTreeGridLwc extends LightningElement {
         }
     }
 
-    //clicking on previous button this method will be called
-    previousHandler(event) {
+    previousHandler() {
         if (this.page > 1) {
             this.page = this.page - 1; //decrease page by 1
         }
-        if (this.page <= 1) {
-            this.previousIsDisabled = true;
-        }
 
+        // creates a custom event to call the displayRecordPerPage method
         const selectedEvent = new CustomEvent('selected',
             { detail: this.displayRecordPerPage(this.page)});
+        // sends the event to the dom to be handled by the page
         dispatchEvent(selectedEvent);
     }
 
-    //clicking on next button this method will be called
-    nextHandler(event) {
+    nextHandler() {
         if((this.page < this.totalPage) && this.page !== this.totalPage){
             this.page = this.page + 1; //increase page by 1
-
         }
-        this.nextIsDisabled = this.page === this.endingRecord;
+
+        // creates a custom event to call the displayRecordPerPage method
         const selectedEvent = new CustomEvent('selected',
             { detail: this.displayRecordPerPage(this.page)});
+        // sends the event to the dom to be handled by the page
         dispatchEvent(selectedEvent);
     }
 
     //this method displays records page by page
     displayRecordPerPage(page){
+        // sets the next button to be disabled
+        // and enabled if this evaluates to true / false
+        this.nextIsDisabled = this.page === this.totalPage;
+        // sets the previous button to be disabled
+        // and enabled if this evaluates to true / false
+        this.previousIsDisabled = this.page === this.startingRecord;
 
         /*let's say for 2nd page, it will be => "Displaying 6 to 10 of 23 records. Page 2 of 5"
         page = 2; pageSize = 5; startingRecord = 5, endingRecord = 10

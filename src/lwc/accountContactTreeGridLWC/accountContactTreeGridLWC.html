@@ -4,6 +4,12 @@
 
 <!-- Account Contact Tree Grid Lwc -->
 <template>
+    <lightning-layout horizontal-align="center" multiple-rows=true>
+        <lightning-button
+                label="Sort" icon-name="utility:sort"
+                onclick={onSort}>
+        </lightning-button>
+    </lightning-layout>
     <lightning-tree-grid
             key-field="name"
             columns={gridColumns}
@@ -12,18 +18,13 @@
             min-column-width="100"
             resize-column-disabled="true">
     </lightning-tree-grid>
-    <lightning-layout>
-        <lightning-layout-item>
-            <lightning-button label="Previous" icon-name="utility:chevronleft"
-                              onclick={previousHandler} disabled={previousIsDisabled}>
-                              </lightning-button>
-        </lightning-layout-item>
-        <lightning-layout-item flexibility="grow"></lightning-layout-item>
-        <lightning-layout-item>
-            <lightning-button label="Next" icon-name="utility:chevronright"
-                              icon-position="right" onclick={nextHandler}
-                              disabled={nextIsDisabled}>
-                              </lightning-button>
-        </lightning-layout-item>
-    </lightning-layout>
+    <lightning-button-group>
+        <lightning-button label="Previous" icon-name="utility:chevronleft"
+                          onclick={previousHandler} disabled={previousIsDisabled}>
+        </lightning-button>
+        <lightning-button label="Next" icon-name="utility:chevronright"
+                          icon-position="right" onclick={nextHandler}
+                          disabled={nextIsDisabled}>
+        </lightning-button>
+    </lightning-button-group>
 </template>

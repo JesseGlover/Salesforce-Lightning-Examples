@@ -18,7 +18,7 @@ export default class AccountContactTreeGridLwc extends LightningElement {
     @track pageSize = 5; //default value we are assigning
     @track totalRecountCount = 0; //total record count received from all retrieved records
     @track totalPage = 0; //total number of page is needed to display all records
-    @track previousIsDisabled = false; // previous button disabled set to false by default
+    @track previousIsDisabled = true; // previous button disabled set to true by default
     @track nextIsDisabled = false; // next button disabled set to false by default
     @track error; // stores error information
     @track sourceData; // stores the data from the apex controller
@@ -32,6 +32,11 @@ export default class AccountContactTreeGridLwc extends LightningElement {
         label: 'Id', fieldName: 'queriedId', type: 'text'},
         {label: 'Name', fieldName: 'queriedName', type: 'text'}
     ];
+    @track options = [
+        {'label': 'Default', 'value': 'default'},
+        {'label': 'Ascending', 'value': 'ascending'},
+        {'label': 'Descending', 'value': 'descending'}
+        ]; // the options available for the combobox
 
     /** @wire is calling the server side function from our Apex Class
      * wireTreeData is a method that is tied to the @wire server side call
@@ -60,7 +65,6 @@ export default class AccountContactTreeGridLwc extends LightningElement {
             // rounds the number to the nearest whole number
             // total count divided by the page size. Results in 5
             this.totalPage = Math.ceil(this.totalRecountCount / this.pageSize);
-
             //initialize data to be displayed ----------->
             //slice will take 0th element and ends with 5, but it doesn't include 5th element
             //so 0 to 4th rows will be display in the table
@@ -114,7 +118,7 @@ export default class AccountContactTreeGridLwc extends LightningElement {
         page = 2; pageSize = 5; startingRecord = 5, endingRecord = 10
         so, slice(5,10) will give 5th to 9th records.
         */
-        this.startingRecord = ((page -1) * this.pageSize) ;
+        this.startingRecord = ((page - 1) * this.pageSize) ;
         this.endingRecord = (this.pageSize * page);
 
         this.endingRecord = (this.endingRecord > this.totalRecountCount)
@@ -128,4 +132,19 @@ export default class AccountContactTreeGridLwc extends LightningElement {
     }
 
 
+    onSort(event) {
+        // reverse the data
+        var reverseOrder = this.sourceData.sort().reverse();
+        for (var i = 0; i < this.sourceData.length; i++) {
+            // empty the array so the data is clean
+            this.paginationList = [];
+            // add the new data to the array
+            this.paginationList.push(reverseOrder[i]);
+        }
+        // without the custom event, the data would be relegated to the
+        // first item in the list, this ensures that all data is present
+        const selectedEvent = new CustomEvent('onsort',
+            { detail: this.displayRecordPerPage(this.page)});
+        dispatchEvent(selectedEvent);
+    }
 }

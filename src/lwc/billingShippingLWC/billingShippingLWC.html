@@ -1,0 +1,53 @@
+<!--
+ - Created by gamedevmadeeasy on 1/10/20.
+ -->
+
+<!-- Billing Shipping Lwc -->
+<template>
+    <lightning-layout multiple-rows=true>
+    <lightning-input-address required
+            address-label="Shipping Address"
+            street-label="Street"
+            city-label="City"
+            country-label="Country"
+            province-label="Province/State"
+            postal-code-label="PostalCode"
+            street={shippingStreet}
+            city={shippingCity}
+            country={shippingCountry}
+            province={shippingProvince}
+            postal-code={shippingPostalCode}
+            province-options={provinceOptions}
+            country-options={countryOptions}
+            onchange={shippingChanged}>
+    </lightning-input-address>
+        <lightning-input type="checkbox" label="Billing same as shipping"
+                         name="sameAddress" checked={isChecked}></lightning-input>
+    </lightning-layout>
+    <div if:true={isFilled}>
+        <lightning-layout vertical-align=bottom multiple-rows=true>
+            <lightning-input-address required
+                                     address-label="Billing Address"
+                                     street-label="Street"
+                                     city-label="City"
+                                     country-label="Country"
+                                     province-label="Province/State"
+                                     postal-code-label="PostalCode"
+                                     street={billingStreet}
+                                     city={billingCity}
+                                     country={billingCountry}
+                                     province={billingProvince}
+                                     postal-code={billingPostalCode}
+                                     province-options={provinceOptions}
+                                     country-options={countryOptions}
+                                     onchange={billingChanged}>
+            </lightning-input-address>
+            <div if:true={isComplete}>
+                <lightning-button title="Submit"
+                                  label="Submit"
+                                  onclick={buttonClick}>
+                </lightning-button>
+            </div>
+        </lightning-layout>
+    </div>
+</template>

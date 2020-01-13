@@ -1,0 +1,33 @@
+<!--
+ - Created by gamedevmadeeasy on 1/9/20.
+ -->
+
+<aura:component description="BillingShippingComponent" controller="AccountBilling">
+
+        <aura:attribute name="billingStreet" type="String" default="121 Spear St."/>
+        <aura:attribute name="billingCity" type="String" default="San Francisco"/>
+        <aura:attribute name="billingProvince" type="String"/>
+        <aura:attribute name="billingCountry" type="String"/>
+        <aura:attribute name="billingPostalCode" type="String" default="94105"/>
+
+        <aura:attribute name="provinceOptions" type="Object[]"/>
+        <aura:attribute name="countryOptions" type="Object[]"/>
+
+        <aura:handler name="init" value="{!this}" action="{!c.init}"/>
+
+        <lightning:inputAddress
+                        addressLabel="Address"
+                        streetLabel="Street"
+                        cityLabel="City"
+                        countryLabel="Country"
+                        provinceLabel="Province/State"
+                        postalCodeLabel="PostalCode"
+                        street="{!v.billingStreet}"
+                        city="{!v.billingCity}"
+                        country="{!v.billingCountry}"
+                        province="{!v.billingProvince}"
+                        postalCode="{!v.billingPostalCode}"
+                        provinceOptions="{!v.provinceOptions}"
+                        countryOptions="{!v.countryOptions}"
+        />
+</aura:component>

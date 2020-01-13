@@ -54,12 +54,28 @@ export default class BillingShippingLwc extends LightningElement {
         }
     }
 
+    // Sets the billing data to be the same as the shipping data.
     billingChanged() {
+        if (this.isChecked === true) {
+            this.billingStreet = this.shippingStreet;
+            this.billingCity = this.shippingCity;
+            this.billingCountry = this.shippingCountry;
+            this.billingPostalCode = this.shippingPostalCode;
+            this.billingProvince = this.shippingProvince;
+        }
+    }
 
+    checkChanged() {
+        this.isChecked = true;
     }
 
     shippingChanged() {
-
+        const address =
+            this.template.querySelector('lightning-input-address');
+        const isValid = address.checkValidity();
+        if(isValid) {
+            this.isFilled = true;
+        }
     }
 
     buttonClick(event) {

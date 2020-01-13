@@ -22,7 +22,8 @@
             onchange={shippingChanged}>
     </lightning-input-address>
         <lightning-input type="checkbox" label="Billing same as shipping"
-                         name="sameAddress" checked={isChecked}></lightning-input>
+                         name="sameAddress" onchange={checkChanged} checked={isChecked}>
+        </lightning-input>
     </lightning-layout>
     <div if:true={isFilled}>
         <lightning-layout vertical-align=bottom multiple-rows=true>
@@ -40,7 +41,8 @@
                                      postal-code={billingPostalCode}
                                      province-options={provinceOptions}
                                      country-options={countryOptions}
-                                     onchange={billingChanged}>
+                                     onchange={billingChanged}
+                                    >
             </lightning-input-address>
             <div if:true={isComplete}>
                 <lightning-button title="Submit"

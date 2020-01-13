@@ -79,7 +79,7 @@
                       <entry key="AURADEFINITIONBUNDLE:TREEGRIDNESTEDDATACOMPONENT" value="1577868154000" />
                       <entry key="AURADEFINITIONBUNDLE:TREEGRIDWRAPPERCOMPONENT" value="1577868154000" />
                       <entry key="LIGHTNINGCOMPONENTBUNDLE:ACCOUNTCONTACTTREEGRIDLWC" value="1577990424000" />
-                      <entry key="LIGHTNINGCOMPONENTBUNDLE:BILLINGSHIPPINGLWC" value="1578936496000" />
+                      <entry key="LIGHTNINGCOMPONENTBUNDLE:BILLINGSHIPPINGLWC" value="1578941494000" />
                       <entry key="LIGHTNINGCOMPONENTBUNDLE:NAVIGATIONLINK" value="1578019175000" />
                       <entry key="LIGHTNINGCOMPONENTBUNDLE:PAGINATOR" value="1577910771000" />
                       <entry key="LIGHTNINGCOMPONENTBUNDLE:VIEWSOURCE" value="1578013662000" />
@@ -1159,7 +1159,7 @@
       <workItem from="1578669936769" duration="3907000" />
       <workItem from="1578674430454" duration="17427000" />
       <workItem from="1578878252081" duration="1770000" />
-      <workItem from="1578931706003" duration="4602000" />
+      <workItem from="1578931706003" duration="8252000" />
     </task>
     <task id="LOCAL-00001" summary="Added comments to the TestResults, seeResults method to understand why the code is there and the issues associated with it.">
       <created>1577123606141</created>
@@ -1252,7 +1252,14 @@
       <option name="project" value="LOCAL" />
       <updated>1578879948771</updated>
     </task>
-    <option name="localTasksCounter" value="14" />
+    <task id="LOCAL-00014" summary="currently, billingShippingLWC.js is not functioning properly. Working on fixing the issues with copying data from one lightning input address to the other when the checkbox is set to true.">
+      <created>1578936651542</created>
+      <option name="number" value="00014" />
+      <option name="presentableId" value="LOCAL-00014" />
+      <option name="project" value="LOCAL" />
+      <updated>1578936651542</updated>
+    </task>
+    <option name="localTasksCounter" value="15" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -1272,7 +1279,8 @@
     <MESSAGE value="Adding Billing and Shipping Components for Aura and LWC versions. &#10;&#10;Will be used to showcase the same implementation for components with Aura and LWC." />
     <MESSAGE value="Visualforce page added for when VisualForce implementations are made." />
     <MESSAGE value="gitignore setup for idea folders." />
-    <option name="LAST_COMMIT_MESSAGE" value="gitignore setup for idea folders." />
+    <MESSAGE value="currently, billingShippingLWC.js is not functioning properly. Working on fixing the issues with copying data from one lightning input address to the other when the checkbox is set to true." />
+    <option name="LAST_COMMIT_MESSAGE" value="currently, billingShippingLWC.js is not functioning properly. Working on fixing the issues with copying data from one lightning input address to the other when the checkbox is set to true." />
   </component>
   <component name="WindowStateProjectService">
     <state x="184" y="118" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1578879845363">
@@ -1280,10 +1288,10 @@
     </state>
     <state x="184" y="118" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.23.1440.877/1440.23.1440.877@0.23.1440.877" timestamp="1578688224716" />
     <state x="184" y="118" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.23.1440.877@0.23.1440.877" timestamp="1578879845363" />
-    <state x="0" y="23" key="CommitChangelistDialog2" timestamp="1578879948660">
-      <screen x="0" y="23" width="1440" height="877" />
+    <state x="1440" y="23" key="CommitChangelistDialog2" timestamp="1578936651116">
+      <screen x="1440" y="23" width="1440" height="877" />
     </state>
-    <state x="1440" y="23" key="CommitChangelistDialog2/0.23.1440.877/1440.23.1440.877@1440.23.1440.877" timestamp="1577990612849" />
+    <state x="1440" y="23" key="CommitChangelistDialog2/0.23.1440.877/1440.23.1440.877@1440.23.1440.877" timestamp="1578936651116" />
     <state x="0" y="23" key="CommitChangelistDialog2/0.23.1440.877@0.23.1440.877" timestamp="1578879948660" />
     <state x="47" y="100" width="1152" height="701" key="DiffContextDialog" timestamp="1578674389221">
       <screen x="0" y="23" width="1440" height="877" />

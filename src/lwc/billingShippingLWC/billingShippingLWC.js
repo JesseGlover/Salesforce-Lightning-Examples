@@ -66,7 +66,7 @@ export default class BillingShippingLwc extends LightningElement {
     }
 
     completeContact() {
-        var data = this.template.querySelector('lightning-input-address');
+        var data = this.template.querySelector('lightning-input');
         var isValid = data.checkValidity();
         if (isValid) {
             this.isComplete = true;

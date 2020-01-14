@@ -39,5 +39,13 @@
             }
         });
         $A.enqueueAction(action);
+    },
+
+    copyData: function(component, event, helper) {
+        component.set("v.billingStreet", component.get("v.shippingStreet").value);
+        component.set("v.billingCity", component.get("v.shippingCity").value);
+        component.set("v.billingProvince", component.get("v.shippingProvince").value);
+        component.set("v.billingCountry", component.get("v.shippingCountry").value);
+        component.set("v.billingPostalCode", component.get("v.shippingPostalCode").value);
     }
 });

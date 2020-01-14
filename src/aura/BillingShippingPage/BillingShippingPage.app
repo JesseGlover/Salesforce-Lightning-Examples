@@ -3,6 +3,7 @@
  -->
 
 <aura:application description="BillingShippingPage" extends="force:slds">
-    <!-- <c:BillingShippingComponent/> -->
-    <c:billingShippingLWC/>
-</aura:application>
+    <!--  <c:BillingShippingComponent/> -->
+    <!--   <c:billingShippingLWC/> -->
+     <c:billingLWC/>
+ </aura:application>

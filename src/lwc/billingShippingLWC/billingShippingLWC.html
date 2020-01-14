@@ -19,10 +19,10 @@
             postal-code={shippingPostalCode}
             province-options={provinceOptions}
             country-options={countryOptions}
-            onchange={shippingChanged}>
+            onchange={completeContact} >
     </lightning-input-address>
-        <lightning-input type="checkbox" label="Billing same as shipping"
-                         name="sameAddress" onchange={checkChanged} checked={isChecked}>
+        <lightning-input type="checkbox" label="Billing not the same as shipping"
+                         name="sameAddress" onchange={checkChanged} >
         </lightning-input>
     </lightning-layout>
     <div if:true={isFilled}>
@@ -40,15 +40,14 @@
                                      province={billingProvince}
                                      postal-code={billingPostalCode}
                                      province-options={provinceOptions}
-                                     country-options={countryOptions}
-                                    >
+                                     country-options={countryOptions} >
             </lightning-input-address>
-            <div if:true={isComplete}>
-                <lightning-button title="Submit"
-                                  label="Submit"
-                                  onclick={buttonClick}>
-                </lightning-button>
-            </div>
         </lightning-layout>
+    </div>
+    <div if:true={isComplete}>
+        <lightning-button title="Submit"
+                          label="Submit"
+                          onclick={buttonClick}>
+        </lightning-button>
     </div>
 </template>

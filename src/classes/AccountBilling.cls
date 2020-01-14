@@ -28,4 +28,26 @@ public with sharing class AccountBilling {
 
         return stateCodes;
     }
+
+    @AuraEnabled(Cacheable=true)
+    public static Contact createContact(Contact records) {
+        Contact contact = new Contact();
+        contact.LastName = records.LastName;
+        contact.FirstName = records.FirstName;
+        contact.Email = records.Email;
+        contact.Phone = records.Phone;
+        contact.MailingStreet = records.MailingStreet;
+        contact.MailingCity = records.MailingCity;
+        contact.MailingCountry = records.MailingCountry;
+        contact.MailingState = records.MailingState;
+        contact.MailingPostalCode = records.MailingPostalCode;
+        contact.OtherStreet = records.OtherStreet;
+        contact.OtherState = records.OtherState;
+        contact.OtherCity = records.OtherCity;
+        contact.OtherCountry = records.OtherCountry;
+        contact.OtherPostalCode = records.OtherPostalCode;
+
+        upsert contact;
+        return contact;
+    }
 }

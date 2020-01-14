@@ -7,19 +7,22 @@ import getStateData from "@salesforce/apex/AccountBilling.getAllStateCodes";
 import getCountryData from "@salesforce/apex/AccountBilling.getAllCountryCodes";
 
 export default class BillingShippingLwc extends LightningElement {
-    @track billingStreet;
+
     @track shippingStreet;
-    @track billingCity;
     @track shippingCity;
-    @track billingPostalCode;
     @track shippingPostalCode;
     @track shippingCountry;
-    @track billingCountry;
     @track shippingProvince;
+
+    @track billingCity;
+    @track billingStreet;
+    @track billingPostalCode;
+    @track billingCountry;
     @track billingProvince;
+
     @track provinceOptions = [];
     @track countryOptions = [];
-    @track isChecked;
+
     @track isFilled = false;
     @track isComplete = false;
     @track error;
@@ -54,37 +57,23 @@ export default class BillingShippingLwc extends LightningElement {
         }
     }
 
-    // Sets the billing data to be the same as the shipping data.
-    billingChanged() {
-        this.checkChanged();
-    }
-
-    checkChanged() {
-        const checkBox = this.template.querySelector('lightning-input');
-        if(checkBox.checked) {
-            this.updateBillingAddress();
-        }
-    }
-
-    updateBillingAddress() {
-        this.billingStreet = this.shippingStreet;
-        this.billingCity = this.shippingCity;
-        this.billingCountry = this.shippingCountry;
-        this.billingPostalCode = this.shippingPostalCode;
-        this.billingProvince = this.shippingProvince;
-    }
-
-    // Sets the is filled value to true if the input address has been filled out
-    shippingChanged() {
-        const address =
-            this.template.querySelector('lightning-input-address');
-        const isValid = address.checkValidity();
-        if(isValid) {
-            this.isFilled = true;
-        }
+    checkChanged(event) {
+        this.isFilled = event.target.checked;
     }
 
     buttonClick(event) {
 
     }
+
+    completeContact() {
+        var data = this.template.querySelector('lightning-input-address');
+        var isValid = data.checkValidity();
+        if (isValid) {
+            this.isComplete = true;
+        }
+    }
 }
+// Todo:  First name, Last name, email, phone, Street, City, State and Zipcode
+// Todo: proper validations for all fields for addresses.
+// Todo: have submit button save the details on Contact. Submit button should
+// Todo: (continued) be greyed out until all the information is filled and valid.

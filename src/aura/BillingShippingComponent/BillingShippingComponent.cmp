@@ -4,30 +4,69 @@
 
 <aura:component description="BillingShippingComponent" controller="AccountBilling">
 
-        <aura:attribute name="billingStreet" type="String" default="121 Spear St."/>
-        <aura:attribute name="billingCity" type="String" default="San Francisco"/>
+        <aura:attribute name="shippingStreet" type="String"/>
+        <aura:attribute name="shippingCity" type="String"/>
+        <aura:attribute name="shippingProvince" type="String"/>
+        <aura:attribute name="shippingCountry" type="String"/>
+        <aura:attribute name="shippingPostalCode" type="String"/>
+
+        <aura:attribute name="billingStreet" type="String"/>
+        <aura:attribute name="billingCity" type="String"/>
         <aura:attribute name="billingProvince" type="String"/>
         <aura:attribute name="billingCountry" type="String"/>
-        <aura:attribute name="billingPostalCode" type="String" default="94105"/>
+        <aura:attribute name="billingPostalCode" type="String"/>
 
         <aura:attribute name="provinceOptions" type="Object[]"/>
         <aura:attribute name="countryOptions" type="Object[]"/>
 
+        <aura:attribute name="isTrue" type="Boolean" default="false"/>
+        <aura:attribute name="isChecked" type="Boolean" default="false"/>
+        <aura:attribute name="isComplete" type="Boolean" default="false"/>
+
         <aura:handler name="init" value="{!this}" action="{!c.init}"/>
 
-        <lightning:inputAddress
-                        addressLabel="Address"
+        <lightning:layout multipleRows="true">
+                <lightning:layoutItem class="slds-align-middle" size="10">
+                        <lightning:inputAddress
+                        aura:id="shippingAddress"
+                        addressLabel="Shipping Address"
                         streetLabel="Street"
                         cityLabel="City"
                         countryLabel="Country"
                         provinceLabel="Province/State"
                         postalCodeLabel="PostalCode"
-                        street="{!v.billingStreet}"
-                        city="{!v.billingCity}"
-                        country="{!v.billingCountry}"
-                        province="{!v.billingProvince}"
-                        postalCode="{!v.billingPostalCode}"
+                        street="{!v.shippingStreet}"
+                        city="{!v.shippingCity}"
+                        country="{!v.shippingCountry}"
+                        province="{!v.shippingProvince}"
+                        postalCode="{!v.shippingPostalCode}"
                         provinceOptions="{!v.provinceOptions}"
-                        countryOptions="{!v.countryOptions}"
-        />
+                        countryOptions="{!v.countryOptions}" />
+                </lightning:layoutItem>
+        </lightning:layout>
+        <lightning:input aura:id="checkBox" checked="{!v.isTrue}" onchange="{!c.onChange}"
+                         label="Billing Same As Shipping"
+                         type="checkbox"/>
+        <aura:if isTrue="{!v.isChecked}">
+                <lightning:layout multipleRows="true">
+                        <lightning:layoutItem class="slds-align-middle" size="10">
+                                <lightning:inputAddress
+                                        aura:id="billingAddress"
+                                        addressLabel="Billing Address"
+                                        streetLabel="Street"
+                                        cityLabel="City"
+                                        countryLabel="Country"
+                                        provinceLabel="Province/State"
+                                        postalCodeLabel="PostalCode"
+                                        street="{!v.billingStreet}"
+                                        city="{!v.billingCity}"
+                                        country="{!v.billingCountry}"
+                                        province="{!v.billingProvince}"
+                                        postalCode="{!v.billingPostalCode}"
+                                        provinceOptions="{!v.provinceOptions}"
+                                        countryOptions="{!v.countryOptions}"
+                                />
+                        </lightning:layoutItem>
+                </lightning:layout>
+        </aura:if>
 </aura:component>

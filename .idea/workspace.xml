@@ -1,11 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="58014b4f-abbc-41b5-89a6-3da08b72349a" name="Default Changelist" comment="currently, billingShippingLWC.js is not functioning properly. Working on fixing the issues with copying data to the database.">
+    <list default="true" id="58014b4f-abbc-41b5-89a6-3da08b72349a" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/classes/AccountBilling.cls" beforeDir="false" afterPath="$PROJECT_DIR$/src/classes/AccountBilling.cls" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/lwc/billingShippingLWC/billingShippingLWC.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/lwc/billingShippingLWC/billingShippingLWC.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/lwc/billingShippingLWC/billingShippingLWC.js-meta.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/lwc/billingShippingLWC/billingShippingLWC.js-meta.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/lwc/billingShippingLWC/billingShippingLWC.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/lwc/billingShippingLWC/billingShippingLWC.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/lwc/billingShippingLWC/billingShippingLWC.js-meta.xml" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -54,8 +55,8 @@
         <option name="anonymousApexSettings">
           <AnonymousApexSettings>
             <option name="apexLogLevel" value="FINEST" />
-            <option name="documentText" value="AccountBilling.getAllCountryCodes();&#10;AccountBilling.getAllStateCodes();" />
-            <option name="splitterProportion" value="0.0911017" />
+            <option name="documentText" value="AccountBilling.getAllStateCodes();" />
+            <option name="splitterProportion" value="0.12641244" />
           </AnonymousApexSettings>
         </option>
         <option name="connectionWorkspaceSettings">
@@ -65,7 +66,7 @@
                 <ConnectionWorkspaceSettings>
                   <option name="buildSuccessDatesBySourceRootRelativePath">
                     <map>
-                      <entry key="APEXCLASS:ACCOUNTBILLING" value="1579033111804" />
+                      <entry key="APEXCLASS:ACCOUNTBILLING" value="1579036580449" />
                       <entry key="APEXCLASS:ACCOUNTCONTACTTABLECONTROLLER" value="1577868139206" />
                       <entry key="APEXCLASS:CONTACTCONTROLLER" value="1578015343000" />
                       <entry key="APEXCLASS:TESTRESULTS" value="1577868139206" />
@@ -89,7 +90,8 @@
                       <entry key="LIGHTNINGCOMPONENTBUNDLE:BILLINGSHIPPINGLWC" value="1579028321000" />
                       <entry key="LIGHTNINGCOMPONENTBUNDLE:NAVIGATIONLINK" value="1578019175000" />
                       <entry key="LIGHTNINGCOMPONENTBUNDLE:PAGINATOR" value="1577910771000" />
-                      <entry key="LIGHTNINGCOMPONENTBUNDLE:SHIPPINGLWC" value="1579028655000" />
+                      <entry key="LIGHTNINGCOMPONENTBUNDLE:SHIPPINGLWC" value="1579041526000" />
+                      <entry key="LIGHTNINGCOMPONENTBUNDLE:SUBMISSIONBUTTON" value="1579039979000" />
                       <entry key="LIGHTNINGCOMPONENTBUNDLE:VIEWSOURCE" value="1578013662000" />
                     </map>
                   </option>
@@ -1168,7 +1170,7 @@
       <workItem from="1578674430454" duration="17427000" />
       <workItem from="1578878252081" duration="1770000" />
       <workItem from="1578931706003" duration="31225000" />
-      <workItem from="1579014776229" duration="12036000" />
+      <workItem from="1579014776229" duration="19195000" />
     </task>
     <task id="LOCAL-00001" summary="Added comments to the TestResults, seeResults method to understand why the code is there and the issues associated with it.">
       <created>1577123606141</created>
@@ -1289,7 +1291,14 @@
       <option name="project" value="LOCAL" />
       <updated>1578989089807</updated>
     </task>
-    <option name="localTasksCounter" value="18" />
+    <task id="LOCAL-00018" summary="currently, billingShippingLWC.js is not functioning properly. Working on fixing the issues with copying data to the database.">
+      <created>1579033530095</created>
+      <option name="number" value="00018" />
+      <option name="presentableId" value="LOCAL-00018" />
+      <option name="project" value="LOCAL" />
+      <updated>1579033530095</updated>
+    </task>
+    <option name="localTasksCounter" value="19" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -1319,10 +1328,10 @@
     </state>
     <state x="184" y="118" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.23.1440.877/1440.23.1440.877@0.23.1440.877" timestamp="1578688224716" />
     <state x="184" y="118" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.23.1440.877@0.23.1440.877" timestamp="1578879845363" />
-    <state x="1440" y="23" key="CommitChangelistDialog2" timestamp="1579033498482">
+    <state x="1440" y="23" key="CommitChangelistDialog2" timestamp="1579033529917">
       <screen x="1440" y="23" width="1440" height="877" />
     </state>
-    <state x="1440" y="23" key="CommitChangelistDialog2/0.23.1440.877/1440.23.1440.877@1440.23.1440.877" timestamp="1579033498482" />
+    <state x="1440" y="23" key="CommitChangelistDialog2/0.23.1440.877/1440.23.1440.877@1440.23.1440.877" timestamp="1579033529917" />
     <state x="0" y="23" key="CommitChangelistDialog2/0.23.1440.877@0.23.1440.877" timestamp="1578989089675" />
     <state x="47" y="100" width="1152" height="701" key="DiffContextDialog" timestamp="1578674389221">
       <screen x="0" y="23" width="1440" height="877" />

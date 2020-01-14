@@ -3,13 +3,7 @@
   <component name="ChangeListManager">
     <list default="true" id="58014b4f-abbc-41b5-89a6-3da08b72349a" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/aura/BillingShippingComponent/BillingShippingComponent.cmp" beforeDir="false" afterPath="$PROJECT_DIR$/src/aura/BillingShippingComponent/BillingShippingComponent.cmp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/aura/BillingShippingComponent/BillingShippingComponentController.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/aura/BillingShippingComponent/BillingShippingComponentController.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/aura/BillingShippingComponent/BillingShippingComponentHelper.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/aura/BillingShippingComponent/BillingShippingComponentHelper.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/aura/BillingShippingPage/BillingShippingPage.app" beforeDir="false" afterPath="$PROJECT_DIR$/src/aura/BillingShippingPage/BillingShippingPage.app" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/classes/AccountBilling.cls" beforeDir="false" afterPath="$PROJECT_DIR$/src/classes/AccountBilling.cls" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/lwc/billingShippingLWC/billingShippingLWC.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/lwc/billingShippingLWC/billingShippingLWC.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/lwc/billingShippingLWC/billingShippingLWC.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/lwc/billingShippingLWC/billingShippingLWC.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -79,7 +73,7 @@
                       <entry key="APEXTRIGGER:ACCOUNTBILLINGTRIGGER" value="1578959115280" />
                       <entry key="AURADEFINITIONBUNDLE:BILLINGLWC" value="1578946574000" />
                       <entry key="AURADEFINITIONBUNDLE:BILLINGSHIPPINGCOMPONENT" value="1578953722075" />
-                      <entry key="AURADEFINITIONBUNDLE:BILLINGSHIPPINGPAGE" value="1578976701383" />
+                      <entry key="AURADEFINITIONBUNDLE:BILLINGSHIPPINGPAGE" value="1578988786216" />
                       <entry key="AURADEFINITIONBUNDLE:NAVIGATIONPAGE" value="1578001226538" />
                       <entry key="AURADEFINITIONBUNDLE:SHIPPINGLWC" value="1578946563000" />
                       <entry key="AURADEFINITIONBUNDLE:TREEGRIDEXAMPLESCOMPONENT" value="1577868154000" />
@@ -88,11 +82,11 @@
                       <entry key="AURADEFINITIONBUNDLE:TREEGRIDNESTEDDATACOMPONENT" value="1577868154000" />
                       <entry key="AURADEFINITIONBUNDLE:TREEGRIDWRAPPERCOMPONENT" value="1577868154000" />
                       <entry key="LIGHTNINGCOMPONENTBUNDLE:ACCOUNTCONTACTTREEGRIDLWC" value="1577990424000" />
-                      <entry key="LIGHTNINGCOMPONENTBUNDLE:BILLINGLWC" value="1578977013000" />
+                      <entry key="LIGHTNINGCOMPONENTBUNDLE:BILLINGLWC" value="1578988101000" />
                       <entry key="LIGHTNINGCOMPONENTBUNDLE:BILLINGSHIPPINGLWC" value="1578958692000" />
                       <entry key="LIGHTNINGCOMPONENTBUNDLE:NAVIGATIONLINK" value="1578019175000" />
                       <entry key="LIGHTNINGCOMPONENTBUNDLE:PAGINATOR" value="1577910771000" />
-                      <entry key="LIGHTNINGCOMPONENTBUNDLE:SHIPPINGLWC" value="1578975776000" />
+                      <entry key="LIGHTNINGCOMPONENTBUNDLE:SHIPPINGLWC" value="1578988945000" />
                       <entry key="LIGHTNINGCOMPONENTBUNDLE:VIEWSOURCE" value="1578013662000" />
                     </map>
                   </option>
@@ -1170,7 +1164,7 @@
       <workItem from="1578669936769" duration="3907000" />
       <workItem from="1578674430454" duration="17427000" />
       <workItem from="1578878252081" duration="1770000" />
-      <workItem from="1578931706003" duration="27399000" />
+      <workItem from="1578931706003" duration="30611000" />
     </task>
     <task id="LOCAL-00001" summary="Added comments to the TestResults, seeResults method to understand why the code is there and the issues associated with it.">
       <created>1577123606141</created>
@@ -1277,7 +1271,14 @@
       <option name="project" value="LOCAL" />
       <updated>1578941630898</updated>
     </task>
-    <option name="localTasksCounter" value="16" />
+    <task id="LOCAL-00016" summary="currently, billingShippingLWC.js is not functioning properly. Working on fixing the issues with copying data from one lightning input address to the other when the checkbox is set to true.">
+      <created>1578980748482</created>
+      <option name="number" value="00016" />
+      <option name="presentableId" value="LOCAL-00016" />
+      <option name="project" value="LOCAL" />
+      <updated>1578980748482</updated>
+    </task>
+    <option name="localTasksCounter" value="17" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -1306,11 +1307,11 @@
     </state>
     <state x="184" y="118" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.23.1440.877/1440.23.1440.877@0.23.1440.877" timestamp="1578688224716" />
     <state x="184" y="118" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.23.1440.877@0.23.1440.877" timestamp="1578879845363" />
-    <state x="1440" y="23" key="CommitChangelistDialog2" timestamp="1578941630777">
-      <screen x="1440" y="23" width="1440" height="877" />
+    <state x="0" y="23" key="CommitChangelistDialog2" timestamp="1578980748267">
+      <screen x="0" y="23" width="1440" height="877" />
     </state>
     <state x="1440" y="23" key="CommitChangelistDialog2/0.23.1440.877/1440.23.1440.877@1440.23.1440.877" timestamp="1578941630777" />
-    <state x="0" y="23" key="CommitChangelistDialog2/0.23.1440.877@0.23.1440.877" timestamp="1578879948660" />
+    <state x="0" y="23" key="CommitChangelistDialog2/0.23.1440.877@0.23.1440.877" timestamp="1578980748267" />
     <state x="47" y="100" width="1152" height="701" key="DiffContextDialog" timestamp="1578674389221">
       <screen x="0" y="23" width="1440" height="877" />
     </state>
@@ -1333,5 +1334,17 @@
       <screen x="1440" y="23" width="1440" height="877" />
     </state>
     <state x="1741" y="23" width="838" height="1032" key="search.everywhere.popup/0.23.1440.877/1440.23.1440.877@1440.23.1440.877" timestamp="1578949298809" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="javascript">
+          <url>file://$PROJECT_DIR$/src/lwc/shippingLWC/shippingLWC.html</url>
+          <line>54</line>
+          <properties lambdaOrdinal="-1" />
+          <option name="timeStamp" value="2" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
   </component>
 </project>

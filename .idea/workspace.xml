@@ -3,10 +3,7 @@
   <component name="ChangeListManager">
     <list default="true" id="58014b4f-abbc-41b5-89a6-3da08b72349a" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/classes/AccountBilling.cls" beforeDir="false" afterPath="$PROJECT_DIR$/src/classes/AccountBilling.cls" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/lwc/billingShippingLWC/billingShippingLWC.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/lwc/billingShippingLWC/billingShippingLWC.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/lwc/billingShippingLWC/billingShippingLWC.js-meta.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/IlluminatedCloud/jescoinc_playground_com/OfflineSymbolTable.zip" beforeDir="false" afterPath="$PROJECT_DIR$/IlluminatedCloud/jescoinc_playground_com/OfflineSymbolTable.zip" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -17,15 +14,15 @@
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="Lightning Web Component CSS" />
-        <option value="Lightning Application" />
         <option value="Lightning Controller" />
-        <option value="Apex Class" />
         <option value="Lightning Helper" />
         <option value="Visualforce Page" />
         <option value="Lightning Component" />
         <option value="Apex Trigger" />
+        <option value="Apex Class" />
         <option value="Lightning Web Component HTML" />
         <option value="Lightning Web Component JavaScript" />
+        <option value="Lightning Application" />
         <option value="Apex Metadata" />
       </list>
     </option>
@@ -69,6 +66,7 @@
                       <entry key="APEXCLASS:ACCOUNTBILLING" value="1579036580449" />
                       <entry key="APEXCLASS:ACCOUNTCONTACTTABLECONTROLLER" value="1577868139206" />
                       <entry key="APEXCLASS:CONTACTCONTROLLER" value="1578015343000" />
+                      <entry key="APEXCLASS:GETSALESFORCEDATA" value="1579560522000" />
                       <entry key="APEXCLASS:TESTRESULTS" value="1577868139206" />
                       <entry key="APEXCLASS:TREEGRIDEXAMPLES" value="1577868139206" />
                       <entry key="APEXCLASS:TREEGRIDWRAPPEREXAMPLE" value="1577223919931" />
@@ -77,6 +75,7 @@
                       <entry key="AURADEFINITIONBUNDLE:BILLINGLWC" value="1578946574000" />
                       <entry key="AURADEFINITIONBUNDLE:BILLINGSHIPPINGCOMPONENT" value="1578953722075" />
                       <entry key="AURADEFINITIONBUNDLE:BILLINGSHIPPINGPAGE" value="1579023704406" />
+                      <entry key="AURADEFINITIONBUNDLE:LIGHTNINGTABEXAMPLEPAGE" value="1579560549000" />
                       <entry key="AURADEFINITIONBUNDLE:NAVIGATIONPAGE" value="1578001226538" />
                       <entry key="AURADEFINITIONBUNDLE:SHIPPINGLWC" value="1578946563000" />
                       <entry key="AURADEFINITIONBUNDLE:TREEGRIDEXAMPLESCOMPONENT" value="1577868154000" />
@@ -88,6 +87,7 @@
                       <entry key="LIGHTNINGCOMPONENTBUNDLE:BILLINGINFO" value="1579024536000" />
                       <entry key="LIGHTNINGCOMPONENTBUNDLE:BILLINGLWC" value="1579028317000" />
                       <entry key="LIGHTNINGCOMPONENTBUNDLE:BILLINGSHIPPINGLWC" value="1579028321000" />
+                      <entry key="LIGHTNINGCOMPONENTBUNDLE:LIGHTNINGTABEXAMPLE" value="1579560523000" />
                       <entry key="LIGHTNINGCOMPONENTBUNDLE:NAVIGATIONLINK" value="1578019175000" />
                       <entry key="LIGHTNINGCOMPONENTBUNDLE:PAGINATOR" value="1577910771000" />
                       <entry key="LIGHTNINGCOMPONENTBUNDLE:SHIPPINGLWC" value="1579041526000" />
@@ -1171,6 +1171,8 @@
       <workItem from="1578878252081" duration="1770000" />
       <workItem from="1578931706003" duration="31225000" />
       <workItem from="1579014776229" duration="19195000" />
+      <workItem from="1579560226951" duration="52000" />
+      <workItem from="1579560279544" duration="277000" />
     </task>
     <task id="LOCAL-00001" summary="Added comments to the TestResults, seeResults method to understand why the code is there and the issues associated with it.">
       <created>1577123606141</created>

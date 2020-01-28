@@ -17,4 +17,5 @@
     <tabs>standard-Product2</tabs>
     <tabs>standard-report</tabs>
     <tabs>standard-Dashboard</tabs>
+    <tabs>Opportunity_Contact__c</tabs>
 </CustomApplication>

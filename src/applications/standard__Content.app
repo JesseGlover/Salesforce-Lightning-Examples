@@ -8,4 +8,5 @@
     <tabs>standard-Workspace</tabs>
     <tabs>standard-ContentSearch</tabs>
     <tabs>standard-ContentSubscriptions</tabs>
+    <tabs>Opportunity_Contact__c</tabs>
 </CustomApplication>

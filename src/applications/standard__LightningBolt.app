@@ -6,5 +6,6 @@
     <label>LightningBolt</label>
     <navType>Standard</navType>
     <tabs>standard-LightningBoltHome</tabs>
+    <tabs>Opportunity_Contact__c</tabs>
     <uiType>Lightning</uiType>
 </CustomApplication>

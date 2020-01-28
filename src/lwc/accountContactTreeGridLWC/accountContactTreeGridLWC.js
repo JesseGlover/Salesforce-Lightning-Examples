@@ -32,6 +32,11 @@ export default class AccountContactTreeGridLwc extends LightningElement {
         label: 'Id', fieldName: 'queriedId', type: 'text'},
         {label: 'Name', fieldName: 'queriedName', type: 'text'}
     ];
+    @track options = [
+        {'label': 'Default', 'value': 'default'},
+        {'label': 'Ascending', 'value': 'ascending'},
+        {'label': 'Descending', 'value': 'descending'}
+        ]; // the options available for the combobox
 
     /** @wire is calling the server side function from our Apex Class
      * wireTreeData is a method that is tied to the @wire server side call
@@ -125,6 +130,7 @@ export default class AccountContactTreeGridLwc extends LightningElement {
         //so for 2nd page, it will show "Displaying 6 to 10 of 23 records. Page 2 of 5"
         this.startingRecord = this.startingRecord + 1;
     }
+
 
     onSort(event) {
         // reverse the data

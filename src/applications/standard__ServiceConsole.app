@@ -179,7 +179,11 @@
     <tabs>standard-Case</tabs>
     <tabs>standard-Opportunity</tabs>
     <tabs>standard-Lead</tabs>
+    <tabs>Opportunity_Contact__c</tabs>
     <workspaceConfig>
+        <mappings>
+            <tab>Opportunity_Contact__c</tab>
+        </mappings>
         <mappings>
             <tab>standard-Account</tab>
         </mappings>

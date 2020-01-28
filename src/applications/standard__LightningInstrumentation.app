@@ -6,5 +6,6 @@
     <label>LightningInstrumentation</label>
     <navType>Standard</navType>
     <tabs>standard-LightningInstrumentation</tabs>
+    <tabs>Opportunity_Contact__c</tabs>
     <uiType>Lightning</uiType>
 </CustomApplication>

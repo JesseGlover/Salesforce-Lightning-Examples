@@ -1,0 +1,48 @@
+<!--
+ - Created by gamedevmadeeasy on 1/23/20.
+ -->
+
+<apex:page controller="LinkedInCrtl" sidebar="false" showHeader="false" >
+    <div style="text-align:center;font-size: 25px;">
+        <apex:outputText style="font-weight:800" value="Linkedin Lite Profile Data"/>
+    </div>
+    <apex:pageblock mode="maindetail">
+        <apex:pageblockSection >
+            <apex:pageBlockTable
+                    value="{!lwrapper.Id}" var="id"  title="Id">
+                <apex:column >
+                    <apex:facet name="header">Id</apex:facet>
+                {!id}
+                </apex:column>
+            </apex:pageBlockTable>
+            <apex:pageBlockTable
+                    value="{!lwrapper.firstName.localized.en_US}" var="FName"  title="First Name">
+                <apex:column >
+                    <apex:facet name="header">First Name</apex:facet>
+                    {!FName}
+                </apex:column>
+            </apex:pageBlockTable>
+            <apex:pageBlockTable
+                    value="{!lwrapper.lastName.localized.en_US}" var="LName"  title="Last Name">
+                <apex:column >
+                    <apex:facet name="header">Last Name</apex:facet>
+                    {!LName}
+                </apex:column>
+            </apex:pageBlockTable>
+            <apex:pageBlockTable
+                    value="{!lwrapper.profilePicture.displayImage}" var="profilePicture"  title="Profile Picture">
+                <apex:column >
+                    <apex:facet name="header">Profile Picture</apex:facet>
+                    {!profilePicture}
+                </apex:column>
+            </apex:pageBlockTable>
+            <apex:pageBlockTable
+                    value="{!EmailAddress}" var="Email"  title="Email Address">
+                <apex:column >
+                    <apex:facet name="header">Email Address</apex:facet>
+                    {!Email}
+                </apex:column>
+            </apex:pageBlockTable>
+        </apex:pageblockSection>
+    </apex:pageblock>
+</apex:page>

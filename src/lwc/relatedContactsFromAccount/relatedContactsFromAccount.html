@@ -1,0 +1,32 @@
+<!--
+ -->
+
+<!-- Related Contacts From Account -->
+<template>
+    <lightning-card icon-name="custom:custom19" title='Read CSV File Demo In LWC'>
+        <div style="margin-left: 3%">
+            <lightning-file-upload
+                    accept={acceptedFormats}
+                    label="Attach receipt"
+                    multiple="multiple"
+                    onuploadfinished={handleUploadFinished}
+                    record-id={recordId}>
+            </lightning-file-upload>
+        </div>
+        <div if:true={error}>
+            {error}
+        </div><br/>
+
+        <div if:true={data}>
+            <lightning-datatable
+                    columns={columns}
+                    data={data}
+                    key-field="Id"
+                    onsave={handleSave}
+                    draft-values={draftValues}
+                    hide-checkbox-column="true"
+                    show-row-number-column="true">
+            </lightning-datatable>
+        </div>
+    </lightning-card>
+</template>

@@ -1,0 +1,21 @@
+<!--
+ - Created by gamedevmadeeasy on 1/24/20.
+ -->
+
+<!-- Dynamic Pagination -->
+<template>
+    <lightning-datatable
+        key-field="id"
+        data={paginationList}
+        columns={columns}>
+    </lightning-datatable>
+        <p>
+            Page {startingPage} of {totalPageCount}.
+        </p>
+        <lightning-input class=slds-size_1-of-7
+            label="" value={pageSize} onchange={onValueChanged}>
+        </lightning-input>
+        <c-pagination-button
+            onnext={nextHandler} onprevious={previousHandler}>
+        </c-pagination-button>
+</template>

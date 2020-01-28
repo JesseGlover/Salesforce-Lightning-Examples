@@ -1,0 +1,19 @@
+<!--
+ - Created by gamedevmadeeasy on 1/27/20.
+ -->
+
+<aura:component implements="flexipage:availableForAllPageTypes">
+    <aura:attribute name="accept" type="List" default="['.csv']"/>
+    <aura:attribute name="multiple" type="Boolean" default="true"/>
+    <aura:attribute name="disabled" type="Boolean" default="false"/>
+
+    <lightning:fileUpload  name="fileUploader"
+                           label= "Demo Upload"
+                           multiple="{!v.multiple}"
+                           accept="{!v.accept}"
+                           disabled="{!v.disabled}"
+                           recordId="0016g000008XhsfAAC"
+                           onuploadfinished="{! c.handleUploadFinished }"/>
+
+</aura:component>
+

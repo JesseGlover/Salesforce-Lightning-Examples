@@ -1,0 +1,33 @@
+<!--
+ - Created by gamedevmadeeasy on 1/20/20.
+ -->
+
+<template>
+    <lightning-tabset variant="vertical">
+        <lightning-tab class='account' label="Account Data">
+            <template for:each={accountData} for:item="account">
+                <p key={account.Id}>{account.Name}</p>
+            </template>
+        </lightning-tab>
+        <lightning-tab class='contact' label="Contact Data">
+            <template for:each={contactData} for:item="contact">
+                <p key={contact.Id}>{contact.Name}</p>
+            </template>
+        </lightning-tab>
+        <lightning-tab class='opportunity' label="Opportunity Data">
+            <template for:each={opportunityData} for:item="opportunity">
+                <p key={opportunity.Id}>{opportunity.Name}</p>
+            </template>
+        </lightning-tab>
+        <lightning-tab class='lead' label="Lead Data">
+            <template for:each={leadData} for:item="lead">
+                <p key={lead.Id}>{lead.Name}</p>
+            </template>
+        </lightning-tab>
+        <lightning-tab class='user' label="User Data">
+            <template for:each={userData} for:item="user">
+                <p key={user.Id}>{user.Name}</p>
+            </template>
+        </lightning-tab>
+    </lightning-tabset>
+</template>

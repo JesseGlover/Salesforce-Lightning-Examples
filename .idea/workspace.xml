@@ -2,87 +2,226 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="58014b4f-abbc-41b5-89a6-3da08b72349a" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/src/aura/Csv_Uploader/Csv_Uploader.cmp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/aura/Csv_Uploader/Csv_Uploader.cmp-meta.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/aura/Csv_Uploader/Csv_UploaderController.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/aura/dynamicPaginationPage/dynamicPaginationPage.app" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/aura/dynamicPaginationPage/dynamicPaginationPage.app-meta.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/aura/lightningTabExamplePage/lightningTabExamplePage.app" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/aura/lightningTabExamplePage/lightningTabExamplePage.app-meta.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/aura/linkedinIntegrationPage/linkedinIntegrationPage.app" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/aura/linkedinIntegrationPage/linkedinIntegrationPage.app-meta.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/aura/testPage/testPage.app" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/aura/testPage/testPage.app-meta.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/classes/Auth.cls" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/classes/Auth.cls-meta.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/classes/GetSalesforceData.cls" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/classes/GetSalesforceData.cls-meta.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/classes/ImportRelatedContacts.cls" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/classes/ImportRelatedContacts.cls-meta.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/classes/LinkedInCrtl.cls" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/classes/LinkedInCrtl.cls-meta.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/classes/LinkedInParser.cls" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/classes/LinkedInParser.cls-meta.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/classes/LinkedinConnection.cls" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/classes/LinkedinConnection.cls-meta.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/classes/TestRestrictContactByName.cls" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/classes/TestRestrictContactByName.cls-meta.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/classes/TestVerifyDate.cls" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/classes/TestVerifyDate.cls-meta.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/classes/TreeGridWrapperExample.cls" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/classes/TreeGridWrapperExample.cls-meta.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/classes/VerifyDate.cls" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/classes/VerifyDate.cls-meta.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/email/unfiled$public/MarketingProductInquiryResponse.email" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/email/unfiled$public/MarketingProductInquiryResponse.email-meta.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/email/unfiled$public/SUPPORTSelfServiceNewCommentNotificationSAMPLE.email" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/email/unfiled$public/SUPPORTSelfServiceNewCommentNotificationSAMPLE.email-meta.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/email/unfiled$public/SUPPORTSelfServiceNewUserLoginInformationSAMPLE.email" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/email/unfiled$public/SUPPORTSelfServiceNewUserLoginInformationSAMPLE.email-meta.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/email/unfiled$public/SUPPORTSelfServiceResetPasswordSAMPLE.email" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/email/unfiled$public/SUPPORTSelfServiceResetPasswordSAMPLE.email-meta.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/email/unfiled$public/SalesNewCustomerEmail.email" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/email/unfiled$public/SalesNewCustomerEmail.email-meta.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/email/unfiled$public/SupportCaseAssignmentNotification.email" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/email/unfiled$public/SupportCaseAssignmentNotification.email-meta.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/email/unfiled$public/SupportCaseCreatedPhoneInquiries.email" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/email/unfiled$public/SupportCaseCreatedPhoneInquiries.email-meta.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/email/unfiled$public/SupportCaseCreatedWebInquiries.email" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/email/unfiled$public/SupportCaseCreatedWebInquiries.email-meta.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/email/unfiled$public/SupportCaseResponse.email" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/email/unfiled$public/SupportCaseResponse.email-meta.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/email/unfiled$public/SupportEscalatedCaseNotification.email" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/email/unfiled$public/SupportEscalatedCaseNotification.email-meta.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/email/unfiled$public/SupportEscalatedCaseReassignment.email" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/email/unfiled$public/SupportEscalatedCaseReassignment.email-meta.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/email/unfiled$public/SupportSelfServiceNewLoginandPassword.email" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/email/unfiled$public/SupportSelfServiceNewLoginandPassword.email-meta.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/email/unfiled$public/SupportSelfServiceResetPassword.email" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/email/unfiled$public/SupportSelfServiceResetPassword.email-meta.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/lwc/dynamicPagination/dynamicPagination.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/lwc/dynamicPagination/dynamicPagination.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/lwc/dynamicPagination/dynamicPagination.js-meta.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/lwc/lightningTabExample/lightningTabExample.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/lwc/lightningTabExample/lightningTabExample.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/lwc/lightningTabExample/lightningTabExample.js-meta.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/lwc/linkedinIntegrationExample/linkedinIntegrationExample.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/lwc/linkedinIntegrationExample/linkedinIntegrationExample.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/lwc/linkedinIntegrationExample/linkedinIntegrationExample.js-meta.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/lwc/paginationButton/paginationButton.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/lwc/paginationButton/paginationButton.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/lwc/paginationButton/paginationButton.js-meta.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/lwc/relatedContactsFromAccount/relatedContactsFromAccount.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/lwc/relatedContactsFromAccount/relatedContactsFromAccount.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/lwc/relatedContactsFromAccount/relatedContactsFromAccount.js-meta.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/lwc/userInputComponent/userInputComponent.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/lwc/userInputComponent/userInputComponent.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/lwc/userInputComponent/userInputComponent.js-meta.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/objects/Account.object" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/objects/AccountCleanInfo.object" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/objects/AccountContactRole.object" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/objects/Activity.object" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/objects/Asset.object" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/objects/AssetRelationship.object" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/objects/AssistantProgress.object" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/objects/AuthorizationForm.object" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/objects/AuthorizationFormConsent.object" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/objects/AuthorizationFormDataUse.object" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/objects/AuthorizationFormText.object" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/objects/Campaign.object" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/objects/CampaignMember.object" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/objects/Case.object" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/objects/CaseComment.object" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/objects/CaseContactRole.object" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/objects/ChatterActivity.object" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/objects/CollaborationGroup.object" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/objects/CollaborationGroupMember.object" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/objects/ConsumptionRate.object" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/objects/ConsumptionSchedule.object" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/objects/Contact.object" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/objects/ContactCleanInfo.object" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/objects/ContactPointTypeConsent.object" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/objects/ContactRequest.object" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/objects/ContentVersion.object" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/objects/Contract.object" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/objects/ContractContactRole.object" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/objects/DandBCompany.object" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/objects/DataUseLegalBasis.object" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/objects/DataUsePurpose.object" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/objects/DuplicateRecordItem.object" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/objects/DuplicateRecordSet.object" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/objects/EmailMessage.object" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/objects/Event.object" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/objects/ExchangeUserMapping.object" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/objects/ExpressionFilter.object" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/objects/ExpressionFilterCriteria.object" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/objects/FeedItem.object" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/objects/ForecastingCategoryMapping.object" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/objects/Goal.object" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/objects/Idea.object" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/objects/Image.object" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/objects/Individual.object" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/objects/Lead.object" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/objects/LeadCleanInfo.object" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/objects/Macro.object" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/objects/MacroAction.object" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/objects/MacroInstruction.object" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/objects/MacroUsage.object" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/objects/MessagingEndUser.object" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/objects/MessagingSession.object" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/objects/Metric.object" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/objects/Opportunity.object" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/objects/OpportunityCompetitor.object" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/objects/OpportunityContactRole.object" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/objects/OpportunityLineItem.object" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/objects/Order.object" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/objects/OrderItem.object" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/objects/OrgDeleteRequest.object" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/objects/OrgMetricScanResult.object" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/objects/OrgMetricScanSummary.object" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/objects/PartnerRole.object" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/objects/Pricebook2.object" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/objects/PricebookEntry.object" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/objects/Product2.object" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/objects/ProductConsumptionSchedule.object" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/objects/PromptAction.object" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/objects/QuickText.object" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/objects/QuickTextUsage.object" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/objects/Recommendation.object" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/objects/RecordAction.object" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/objects/RecordMergeHistory.object" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/objects/RequestsForAccessSIQ.object" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/objects/RevenueElement.object" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/objects/Scorecard.object" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/objects/ScorecardAssociation.object" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/objects/ScorecardMetric.object" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/objects/Site.object" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/objects/SocialPersona.object" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/objects/Solution.object" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/objects/StreamActivityAccess.object" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/objects/StreamingChannel.object" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/objects/Task.object" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/objects/Topic.object" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/objects/TopicAssignment.object" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/objects/User.object" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/objects/UserProvisioningRequest.object" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/pages/LinkedInVFPage.page" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/pages/LinkedInVFPage.page-meta.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/pages/SampleLinkedin.page" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/pages/SampleLinkedin.page-meta.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/pages/calloutViewer.page" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/pages/calloutViewer.page-meta.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/standardValueSets/AccountContactRole.standardValueSet" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/standardValueSets/AccountOwnership.standardValueSet" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/standardValueSets/AccountRating.standardValueSet" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/standardValueSets/AccountType.standardValueSet" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/standardValueSets/AssetStatus.standardValueSet" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/standardValueSets/CampaignMemberStatus.standardValueSet" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/standardValueSets/CampaignStatus.standardValueSet" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/standardValueSets/CampaignType.standardValueSet" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/standardValueSets/CaseContactRole.standardValueSet" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/standardValueSets/CaseOrigin.standardValueSet" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/standardValueSets/CasePriority.standardValueSet" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/standardValueSets/CaseReason.standardValueSet" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/standardValueSets/CaseStatus.standardValueSet" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/standardValueSets/CaseType.standardValueSet" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/standardValueSets/ContactRole.standardValueSet" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/standardValueSets/ContractContactRole.standardValueSet" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/standardValueSets/ContractStatus.standardValueSet" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/standardValueSets/EventSubject.standardValueSet" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/standardValueSets/EventType.standardValueSet" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/standardValueSets/FiscalYearPeriodName.standardValueSet" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/standardValueSets/FiscalYearPeriodPrefix.standardValueSet" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/standardValueSets/FiscalYearQuarterName.standardValueSet" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/standardValueSets/FiscalYearQuarterPrefix.standardValueSet" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/standardValueSets/IdeaMultiCategory.standardValueSet" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/standardValueSets/IdeaStatus.standardValueSet" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/standardValueSets/Industry.standardValueSet" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/standardValueSets/LeadSource.standardValueSet" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/standardValueSets/LeadStatus.standardValueSet" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/standardValueSets/OpportunityCompetitor.standardValueSet" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/standardValueSets/OpportunityStage.standardValueSet" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/standardValueSets/OpportunityType.standardValueSet" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/standardValueSets/OrderStatus.standardValueSet" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/standardValueSets/OrderType.standardValueSet" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/standardValueSets/PartnerRole.standardValueSet" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/standardValueSets/Product2Family.standardValueSet" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/standardValueSets/QuickTextCategory.standardValueSet" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/standardValueSets/QuickTextChannel.standardValueSet" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/standardValueSets/Salutation.standardValueSet" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/standardValueSets/SolutionStatus.standardValueSet" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/standardValueSets/TaskPriority.standardValueSet" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/standardValueSets/TaskStatus.standardValueSet" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/standardValueSets/TaskSubject.standardValueSet" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/standardValueSets/TaskType.standardValueSet" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/tabs/standard-home.tab" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/triggers/AccountAddressTrigger.trigger" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/triggers/AccountAddressTrigger.trigger-meta.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/triggers/ClosedOpportunityTrigger.trigger" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/triggers/ClosedOpportunityTrigger.trigger-meta.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/triggers/RestrictContactByName.trigger" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/triggers/RestrictContactByName.trigger-meta.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/IlluminatedCloud/jescoinc_playground_com/OfflineSymbolTable.zip" beforeDir="false" afterPath="$PROJECT_DIR$/IlluminatedCloud/jescoinc_playground_com/OfflineSymbolTable.zip" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/applications/standard__AppLauncher.app" beforeDir="false" afterPath="$PROJECT_DIR$/src/applications/standard__AppLauncher.app" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/applications/standard__Chatter.app" beforeDir="false" afterPath="$PROJECT_DIR$/src/applications/standard__Chatter.app" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/applications/standard__Community.app" beforeDir="false" afterPath="$PROJECT_DIR$/src/applications/standard__Community.app" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/applications/standard__Content.app" beforeDir="false" afterPath="$PROJECT_DIR$/src/applications/standard__Content.app" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/applications/standard__LightningBolt.app" beforeDir="false" afterPath="$PROJECT_DIR$/src/applications/standard__LightningBolt.app" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/applications/standard__LightningInstrumentation.app" beforeDir="false" afterPath="$PROJECT_DIR$/src/applications/standard__LightningInstrumentation.app" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/applications/standard__LightningSales.app" beforeDir="false" afterPath="$PROJECT_DIR$/src/applications/standard__LightningSales.app" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/applications/standard__LightningSalesConsole.app" beforeDir="false" afterPath="$PROJECT_DIR$/src/applications/standard__LightningSalesConsole.app" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/applications/standard__LightningService.app" beforeDir="false" afterPath="$PROJECT_DIR$/src/applications/standard__LightningService.app" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/applications/standard__Marketing.app" beforeDir="false" afterPath="$PROJECT_DIR$/src/applications/standard__Marketing.app" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/applications/standard__Platform.app" beforeDir="false" afterPath="$PROJECT_DIR$/src/applications/standard__Platform.app" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/applications/standard__Sales.app" beforeDir="false" afterPath="$PROJECT_DIR$/src/applications/standard__Sales.app" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/applications/standard__Service.app" beforeDir="false" afterPath="$PROJECT_DIR$/src/applications/standard__Service.app" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/applications/standard__ServiceConsole.app" beforeDir="false" afterPath="$PROJECT_DIR$/src/applications/standard__ServiceConsole.app" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/applications/standard__Sites.app" beforeDir="false" afterPath="$PROJECT_DIR$/src/applications/standard__Sites.app" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/aura/TreeGridExamplesComponent/TreeGridExamplesComponent.cmp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/aura/TreeGridExamplesComponent/TreeGridExamplesComponent.cmp-meta.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/aura/TreeGridExamplesComponent/TreeGridExamplesComponentController.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/aura/TreeGridExamplesComponent/TreeGridExamplesComponentHelper.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/aura/TreeGridExamplesPage/TreeGridExamplesPage.app" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/aura/TreeGridExamplesPage/TreeGridExamplesPage.app-meta.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/aura/TreeGridLWCPage/TreeGridLWCPage.app" beforeDir="false" afterPath="$PROJECT_DIR$/src/aura/TreeGridLWCPage/TreeGridLWCPage.app" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/aura/TreeGridNestedDataComponent/TreeGridNestedDataComponent.cmp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/aura/TreeGridNestedDataComponent/TreeGridNestedDataComponent.cmp-meta.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/aura/TreeGridNestedDataComponent/TreeGridNestedDataComponentController.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/aura/TreeGridNestedDataComponent/TreeGridNestedDataComponentHelper.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/aura/TreeGridWrapperComponent/TreeGridWrapperComponent.cmp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/aura/TreeGridWrapperComponent/TreeGridWrapperComponent.cmp-meta.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/aura/TreeGridWrapperComponent/TreeGridWrapperComponentController.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/aura/TreeGridWrapperComponent/TreeGridWrapperComponentHelper.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/cleanDataServices/DataCloudGeoLocation.cleanDataService" beforeDir="false" afterPath="$PROJECT_DIR$/src/cleanDataServices/DataCloudGeoLocation.cleanDataService" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/layouts/Account-Account %28Marketing%29 Layout.layout" beforeDir="false" afterPath="$PROJECT_DIR$/src/layouts/Account-Account %28Marketing%29 Layout.layout" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/layouts/Account-Account %28Sales%29 Layout.layout" beforeDir="false" afterPath="$PROJECT_DIR$/src/layouts/Account-Account %28Sales%29 Layout.layout" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/layouts/Account-Account %28Support%29 Layout.layout" beforeDir="false" afterPath="$PROJECT_DIR$/src/layouts/Account-Account %28Support%29 Layout.layout" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/layouts/Account-Account Layout.layout" beforeDir="false" afterPath="$PROJECT_DIR$/src/layouts/Account-Account Layout.layout" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/layouts/Contract-Contract Layout.layout" beforeDir="false" afterPath="$PROJECT_DIR$/src/layouts/Contract-Contract Layout.layout" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/layouts/Opportunity-Opportunity %28Sales%29 Layout.layout" beforeDir="false" afterPath="$PROJECT_DIR$/src/layouts/Opportunity-Opportunity %28Sales%29 Layout.layout" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/layouts/Opportunity-Opportunity Layout.layout" beforeDir="false" afterPath="$PROJECT_DIR$/src/layouts/Opportunity-Opportunity Layout.layout" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/lwc/accountContactTreeGridLWC/accountContactTreeGridLWC.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/lwc/accountContactTreeGridLWC/accountContactTreeGridLWC.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/lwc/accountContactTreeGridLWC/accountContactTreeGridLWC.js-meta.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/lwc/accountContactTreeGridLWC/accountContactTreeGridLWC.js-meta.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/package.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/package.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/pages/test.page" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/test.page" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/profiles/Admin.profile" beforeDir="false" afterPath="$PROJECT_DIR$/src/profiles/Admin.profile" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/profiles/Analytics Cloud Integration User.profile" beforeDir="false" afterPath="$PROJECT_DIR$/src/profiles/Analytics Cloud Integration User.profile" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/profiles/Analytics Cloud Security User.profile" beforeDir="false" afterPath="$PROJECT_DIR$/src/profiles/Analytics Cloud Security User.profile" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/profiles/Authenticated Website.profile" beforeDir="false" afterPath="$PROJECT_DIR$/src/profiles/Authenticated Website.profile" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/profiles/Chatter External User.profile" beforeDir="false" afterPath="$PROJECT_DIR$/src/profiles/Chatter External User.profile" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/profiles/Chatter Free User.profile" beforeDir="false" afterPath="$PROJECT_DIR$/src/profiles/Chatter Free User.profile" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/profiles/Chatter Moderator User.profile" beforeDir="false" afterPath="$PROJECT_DIR$/src/profiles/Chatter Moderator User.profile" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/profiles/ContractManager.profile" beforeDir="false" afterPath="$PROJECT_DIR$/src/profiles/ContractManager.profile" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/profiles/Cross Org Data Proxy User.profile" beforeDir="false" afterPath="$PROJECT_DIR$/src/profiles/Cross Org Data Proxy User.profile" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/profiles/Custom%3A Marketing Profile.profile" beforeDir="false" afterPath="$PROJECT_DIR$/src/profiles/Custom%3A Marketing Profile.profile" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/profiles/Custom%3A Sales Profile.profile" beforeDir="false" afterPath="$PROJECT_DIR$/src/profiles/Custom%3A Sales Profile.profile" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/profiles/Custom%3A Support Profile.profile" beforeDir="false" afterPath="$PROJECT_DIR$/src/profiles/Custom%3A Support Profile.profile" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/profiles/Customer Community Login User.profile" beforeDir="false" afterPath="$PROJECT_DIR$/src/profiles/Customer Community Login User.profile" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/profiles/Customer Community Plus Login User.profile" beforeDir="false" afterPath="$PROJECT_DIR$/src/profiles/Customer Community Plus Login User.profile" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/profiles/Customer Community Plus User.profile" beforeDir="false" afterPath="$PROJECT_DIR$/src/profiles/Customer Community Plus User.profile" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/profiles/Customer Community User.profile" beforeDir="false" afterPath="$PROJECT_DIR$/src/profiles/Customer Community User.profile" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/profiles/Customer Portal Manager Custom.profile" beforeDir="false" afterPath="$PROJECT_DIR$/src/profiles/Customer Portal Manager Custom.profile" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/profiles/Customer Portal Manager Standard.profile" beforeDir="false" afterPath="$PROJECT_DIR$/src/profiles/Customer Portal Manager Standard.profile" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/profiles/External Identity User.profile" beforeDir="false" afterPath="$PROJECT_DIR$/src/profiles/External Identity User.profile" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/profiles/Force%2Ecom - App Subscription User.profile" beforeDir="false" afterPath="$PROJECT_DIR$/src/profiles/Force%2Ecom - App Subscription User.profile" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/profiles/Force%2Ecom - Free User.profile" beforeDir="false" afterPath="$PROJECT_DIR$/src/profiles/Force%2Ecom - Free User.profile" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/profiles/Gold Partner User.profile" beforeDir="false" afterPath="$PROJECT_DIR$/src/profiles/Gold Partner User.profile" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/profiles/High Volume Customer Portal User.profile" beforeDir="false" afterPath="$PROJECT_DIR$/src/profiles/High Volume Customer Portal User.profile" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/profiles/HighVolumePortal.profile" beforeDir="false" afterPath="$PROJECT_DIR$/src/profiles/HighVolumePortal.profile" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/profiles/Identity User.profile" beforeDir="false" afterPath="$PROJECT_DIR$/src/profiles/Identity User.profile" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/profiles/MarketingProfile.profile" beforeDir="false" afterPath="$PROJECT_DIR$/src/profiles/MarketingProfile.profile" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/profiles/Partner App Subscription User.profile" beforeDir="false" afterPath="$PROJECT_DIR$/src/profiles/Partner App Subscription User.profile" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/profiles/Partner Community Login User.profile" beforeDir="false" afterPath="$PROJECT_DIR$/src/profiles/Partner Community Login User.profile" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/profiles/Partner Community User.profile" beforeDir="false" afterPath="$PROJECT_DIR$/src/profiles/Partner Community User.profile" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/profiles/PlatformPortal.profile" beforeDir="false" afterPath="$PROJECT_DIR$/src/profiles/PlatformPortal.profile" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/profiles/ReadOnly.profile" beforeDir="false" afterPath="$PROJECT_DIR$/src/profiles/ReadOnly.profile" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/profiles/Silver Partner User.profile" beforeDir="false" afterPath="$PROJECT_DIR$/src/profiles/Silver Partner User.profile" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/profiles/SolutionManager.profile" beforeDir="false" afterPath="$PROJECT_DIR$/src/profiles/SolutionManager.profile" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/profiles/Standard.profile" beforeDir="false" afterPath="$PROJECT_DIR$/src/profiles/Standard.profile" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/profiles/StandardAul.profile" beforeDir="false" afterPath="$PROJECT_DIR$/src/profiles/StandardAul.profile" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/profiles/Work%2Ecom Only User.profile" beforeDir="false" afterPath="$PROJECT_DIR$/src/profiles/Work%2Ecom Only User.profile" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/settings/Search.settings" beforeDir="false" afterPath="$PROJECT_DIR$/src/settings/Search.settings" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -112,7 +251,14 @@
         <option value="Jesse Glover &lt;jesse.glover@revature.net&gt;" />
       </list>
     </option>
+    <option name="PUSH_TAGS">
+      <GitPushTagMode>
+        <option name="argument" value="--tags" />
+        <option name="title" value="All" />
+      </GitPushTagMode>
+    </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+    <option name="UPDATE_TYPE" value="MERGE" />
   </component>
   <component name="IlluminatedCloudWorkspaceSettings">
     <option name="moduleWorkspaceSettings">
@@ -2427,6 +2573,7 @@
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
     <property name="jsx.switch.disabled" value="true" />
+    <property name="settings.editor.selected.configurable" value="fileTemplates" />
   </component>
   <component name="ServiceViewManager">
     <option name="viewStates">
@@ -2485,7 +2632,9 @@
       <workItem from="1580141098797" duration="16541000" />
       <workItem from="1580225320765" duration="5657000" />
       <workItem from="1580231738243" duration="5000" />
-      <workItem from="1580231747389" duration="5632000" />
+      <workItem from="1580231747389" duration="7226000" />
+      <workItem from="1580246450943" duration="479000" />
+      <workItem from="1580250044602" duration="247000" />
     </task>
     <task id="LOCAL-00001" summary="Added comments to the TestResults, seeResults method to understand why the code is there and the issues associated with it.">
       <created>1577123606141</created>
@@ -2620,7 +2769,14 @@
       <option name="project" value="LOCAL" />
       <updated>1579560844104</updated>
     </task>
-    <option name="localTasksCounter" value="20" />
+    <task id="LOCAL-00020" summary="More components created for various tasks.">
+      <created>1580243685252</created>
+      <option name="number" value="00020" />
+      <option name="presentableId" value="LOCAL-00020" />
+      <option name="project" value="LOCAL" />
+      <updated>1580243685253</updated>
+    </task>
+    <option name="localTasksCounter" value="21" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -2643,13 +2799,18 @@
     <MESSAGE value="currently, billingShippingLWC.js is not functioning properly. Working on fixing the issues with copying data from one lightning input address to the other when the checkbox is set to true." />
     <MESSAGE value="currently, billingShippingLWC.js is not functioning properly. Working on fixing the issues with copying data to the database." />
     <MESSAGE value="created an Aura page to house the lightningTabExample LWC to be able to view outside of the org.&#10;Implemented the GetSalesforceData class which does apex SOQL queries for the Account, Contact, Opportunity, Lead and User Objects with a limit of 10 per.&#10;Created the lightningTab Lightning Web Component. The JS file does the proper calls to the Apex class and queries the schema values which will properly store the information recovered.&#10;The LightningTab html page does the calls to the tracked variables from the JS page which will then display the data on the page." />
-    <option name="LAST_COMMIT_MESSAGE" value="created an Aura page to house the lightningTabExample LWC to be able to view outside of the org.&#10;Implemented the GetSalesforceData class which does apex SOQL queries for the Account, Contact, Opportunity, Lead and User Objects with a limit of 10 per.&#10;Created the lightningTab Lightning Web Component. The JS file does the proper calls to the Apex class and queries the schema values which will properly store the information recovered.&#10;The LightningTab html page does the calls to the tracked variables from the JS page which will then display the data on the page." />
+    <MESSAGE value="More components created for various tasks." />
+    <option name="LAST_COMMIT_MESSAGE" value="More components created for various tasks." />
   </component>
   <component name="WindowStateProjectService">
     <state x="220" y="46" key="#Illuminated_Cloud" timestamp="1580168496985">
       <screen x="0" y="23" width="1440" height="877" />
     </state>
     <state x="220" y="46" key="#Illuminated_Cloud/0.23.1440.877/3360.23.1440.877/1440.23.1920.1057@0.23.1440.877" timestamp="1580168496985" />
+    <state x="220" y="46" key="#Notifications" timestamp="1580250266758">
+      <screen x="0" y="23" width="1440" height="877" />
+    </state>
+    <state x="220" y="46" key="#Notifications/0.23.1440.877/1440.23.1600.877/3040.23.1440.877@0.23.1440.877" timestamp="1580250266758" />
     <state x="184" y="118" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1579806498352">
       <screen x="0" y="23" width="1440" height="877" />
     </state>
@@ -2665,10 +2826,11 @@
     </state>
     <state x="408" y="197" key="#com.intellij.openapi.updateSettings.impl.PluginUpdateInfoDialog/0.23.1440.877/1440.23.1920.1057/3360.23.1440.877@0.23.1440.877" timestamp="1580227616393" />
     <state x="408" y="197" key="#com.intellij.openapi.updateSettings.impl.PluginUpdateInfoDialog/0.23.1440.877/3360.23.1440.877/1440.23.1920.1057@0.23.1440.877" timestamp="1579732853776" />
-    <state x="1692" y="121" key="CommitChangelistDialog2" timestamp="1579560843733">
-      <screen x="1440" y="23" width="1920" height="1057" />
+    <state x="0" y="23" key="CommitChangelistDialog2" timestamp="1580243684726">
+      <screen x="0" y="23" width="1440" height="877" />
     </state>
     <state x="1440" y="23" key="CommitChangelistDialog2/0.23.1440.877/1440.23.1440.877@1440.23.1440.877" timestamp="1579033529917" />
+    <state x="0" y="23" key="CommitChangelistDialog2/0.23.1440.877/1440.23.1600.877/3040.23.1440.877@0.23.1440.877" timestamp="1580243684726" />
     <state x="1692" y="121" key="CommitChangelistDialog2/0.23.1440.877/1440.23.1920.1057/3360.23.1440.877@0.23.1440.877" timestamp="1579560843733" />
     <state x="0" y="23" key="CommitChangelistDialog2/0.23.1440.877@0.23.1440.877" timestamp="1578989089675" />
     <state x="47" y="100" width="1152" height="701" key="DiffContextDialog" timestamp="1578674389221">
@@ -2676,15 +2838,33 @@
     </state>
     <state x="47" y="100" width="1152" height="701" key="DiffContextDialog/0.23.1440.877/1440.23.1440.877@0.23.1440.877" timestamp="1578674389221" />
     <state x="47" y="100" key="DiffContextDialog/0.23.1440.877@0.23.1440.877" timestamp="1577125007659" />
-    <state x="220" y="138" key="Vcs.Push.Dialog.v2" timestamp="1579560860948">
+    <state x="487" y="317" key="Github.CreatePullRequestDialog" timestamp="1580250193765">
+      <screen x="0" y="23" width="1440" height="877" />
+    </state>
+    <state x="487" y="317" key="Github.CreatePullRequestDialog/0.23.1440.877/1440.23.1600.877/3040.23.1440.877@0.23.1440.877" timestamp="1580250193765" />
+    <state x="478" y="344" width="484" height="333" key="Github.ShareDialog" timestamp="1580250149038">
+      <screen x="0" y="23" width="1440" height="877" />
+    </state>
+    <state x="478" y="344" width="484" height="333" key="Github.ShareDialog/0.23.1440.877/1440.23.1600.877/3040.23.1440.877@0.23.1440.877" timestamp="1580250149038" />
+    <state x="0" y="23" width="1154" height="877" key="SettingsEditor" timestamp="1580247018386">
+      <screen x="0" y="23" width="1440" height="877" />
+    </state>
+    <state x="0" y="23" width="1154" height="877" key="SettingsEditor/0.23.1440.877/1440.23.1600.877/3040.23.1440.877@0.23.1440.877" timestamp="1580247018386" />
+    <state x="220" y="138" key="Vcs.Push.Dialog.v2" timestamp="1580250237288">
       <screen x="0" y="23" width="1440" height="877" />
     </state>
     <state x="1660" y="138" key="Vcs.Push.Dialog.v2/0.23.1440.877/1440.23.1440.877@1440.23.1440.877" timestamp="1578941638925" />
+    <state x="220" y="138" key="Vcs.Push.Dialog.v2/0.23.1440.877/1440.23.1600.877/3040.23.1440.877@0.23.1440.877" timestamp="1580250237288" />
     <state x="220" y="138" key="Vcs.Push.Dialog.v2/0.23.1440.877/1440.23.1920.1057/3360.23.1440.877@0.23.1440.877" timestamp="1579560860948" />
     <state x="220" y="138" key="Vcs.Push.Dialog.v2/0.23.1440.877@0.23.1440.877" timestamp="1578989100888" />
-    <state x="474" y="368" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1579560851947">
+    <state x="100" y="123" width="1240" height="677" key="com.intellij.dvcs.ui.CompareBranchesDialog" timestamp="1580250310355">
       <screen x="0" y="23" width="1440" height="877" />
     </state>
+    <state x="100" y="123" width="1240" height="677" key="com.intellij.dvcs.ui.CompareBranchesDialog/0.23.1440.877/1440.23.1600.877/3040.23.1440.877@0.23.1440.877" timestamp="1580250310355" />
+    <state x="474" y="368" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1580250291853">
+      <screen x="0" y="23" width="1440" height="877" />
+    </state>
+    <state x="474" y="368" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2/0.23.1440.877/1440.23.1600.877/3040.23.1440.877@0.23.1440.877" timestamp="1580250291853" />
     <state x="474" y="368" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2/0.23.1440.877/1440.23.1920.1057/3360.23.1440.877@0.23.1440.877" timestamp="1579560851947" />
     <state x="474" y="368" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2/0.23.1440.877@0.23.1440.877" timestamp="1578879086218" />
     <state x="3351" y="23" width="1452" height="877" maximized="true" key="dock-window-1" timestamp="1580236654909">

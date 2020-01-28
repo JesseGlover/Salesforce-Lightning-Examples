@@ -15,7 +15,12 @@ public class LinkedInCrtl{
         fetchLinkedInEmailDetails();
     }
 
-    // Parsing the JSON data by hand.
+    /**
+    * Grabs the Email details for Linkedin from the OAuth2 connection
+    * Utilizes callout and OAuth2 for the Linkedin API V2
+    * @param empty
+    * @return void.
+    */
     private void fetchLinkedInEmailDetails() {
         HttpRequest req = new HttpRequest();
         req.setHeader('accept', 'application/json');

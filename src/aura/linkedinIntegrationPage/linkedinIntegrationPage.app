@@ -3,5 +3,5 @@
  -->
 
 <aura:application description="linkedinIntegrationPage">
-    <c:linkedinIntegrationExample/>
+
 </aura:application>

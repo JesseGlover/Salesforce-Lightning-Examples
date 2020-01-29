@@ -5,5 +5,5 @@
 <aura:application description="testPage"
                   implements="flexipage:availableForAllPageTypes"
                   extends="force:slds">
-
+    <c:uiTableLWC/>
 </aura:application>

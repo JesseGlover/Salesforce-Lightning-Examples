@@ -1,17 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="58014b4f-abbc-41b5-89a6-3da08b72349a" name="Default Changelist" comment="">
+    <list default="true" id="58014b4f-abbc-41b5-89a6-3da08b72349a" name="Default Changelist" comment="Removed classes and components that were unused.&#10;Added proper classes and components.&#10;Test class needs a little TLC to make it up to date with the new code for the class it works with.">
+      <change afterPath="$PROJECT_DIR$/src/classes/LeadOpportunityTableTest.cls" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/classes/UITableCustomClass.cls" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/lwc/uiTableLWC/uiTableLWC.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/lwc/uiTableLWC/uiTableLWC.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/lwc/uiTableLWC/uiTableLWC.js-meta.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/IlluminatedCloud/jescoinc_playground_com/OfflineSymbolTable.zip" beforeDir="false" afterPath="$PROJECT_DIR$/IlluminatedCloud/jescoinc_playground_com/OfflineSymbolTable.zip" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/aura/linkedinIntegrationPage/linkedinIntegrationPage.app" beforeDir="false" afterPath="$PROJECT_DIR$/src/aura/linkedinIntegrationPage/linkedinIntegrationPage.app" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/aura/testPage/testPage.app" beforeDir="false" afterPath="$PROJECT_DIR$/src/aura/testPage/testPage.app" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/pages/LinkedInVFPage.page" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/pages/LinkedInVFPage.page-meta.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/pages/calloutViewer.page" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/pages/calloutViewer.page-meta.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/pages/test.page" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/pages/test.page-meta.xml" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -28,6 +24,7 @@
         <option value="Lightning Component" />
         <option value="Lightning Controller" />
         <option value="Lightning Helper" />
+        <option value="Apex Unit Test Class" />
         <option value="Lightning Web Component HTML" />
         <option value="Lightning Web Component JavaScript" />
         <option value="Apex Class" />
@@ -67,8 +64,8 @@
       <ProjectWorkspaceSettings>
         <option name="anonymousApexSettings">
           <AnonymousApexSettings>
-            <option name="documentText" value="LeadOpportunityTable.filterAllData();" />
-            <option name="splitterProportion" value="0.24767442" />
+            <option name="documentText" value="UITableData.parseData();" />
+            <option name="splitterProportion" value="0.23350546" />
           </AnonymousApexSettings>
         </option>
         <option name="connectionWorkspaceSettings">
@@ -82,22 +79,29 @@
                       <entry key="APEXCLASS:ACCOUNTCONTACTTABLECONTROLLER" value="1579564087000" />
                       <entry key="APEXCLASS:AUTH" value="1580254780520" />
                       <entry key="APEXCLASS:CALLOUTVIEWER_CONTROLLER" value="1579725308178" />
+                      <entry key="APEXCLASS:COLUMNTYPEATTRIBUTES" value="1580402025000" />
                       <entry key="APEXCLASS:CONTACTCONTROLLER" value="1578015343000" />
                       <entry key="APEXCLASS:CONTROLLER" value="1580156143000" />
                       <entry key="APEXCLASS:GETSALESFORCEDATA" value="1579901532174" />
                       <entry key="APEXCLASS:HTTPCALLOUTLWC" value="1579643324551" />
                       <entry key="APEXCLASS:IMPORTRELATEDCONTACTS" value="1580236470000" />
-                      <entry key="APEXCLASS:LEADOPPORTUNITYTABLE" value="1580314307637" />
+                      <entry key="APEXCLASS:LEADOPPORTUNITYTABLE" value="1580356430610" />
+                      <entry key="APEXCLASS:LEADOPPORTUNITYTABLETEST" value="1580502503216" />
+                      <entry key="APEXCLASS:LEADTABLEDATA" value="1580400278771" />
                       <entry key="APEXCLASS:LINKEDINCONNECTION" value="1579797203685" />
                       <entry key="APEXCLASS:LINKEDINCONTROLLERTEST" value="1579724561689" />
                       <entry key="APEXCLASS:LINKEDINCRTL" value="1580254933944" />
                       <entry key="APEXCLASS:LINKEDINPARSER" value="1579820934606" />
                       <entry key="APEXCLASS:LINKEDINPARSERHELPER" value="1579814049586" />
                       <entry key="APEXCLASS:LINKEDINVERIFICATION" value="1579631477000" />
+                      <entry key="APEXCLASS:OPPORTUNITYTABLEDATA" value="1580400193217" />
                       <entry key="APEXCLASS:STACKEXCHANGEAPI" value="1579727148617" />
                       <entry key="APEXCLASS:TESTRESULTS" value="1579564087000" />
                       <entry key="APEXCLASS:TREEGRIDEXAMPLES" value="1579564087000" />
                       <entry key="APEXCLASS:TREEGRIDWRAPPEREXAMPLE" value="1577223919931" />
+                      <entry key="APEXCLASS:UITABLECUSTOMCLASS" value="1580502638020" />
+                      <entry key="APEXCLASS:UITABLEDATA" value="1580410524615" />
+                      <entry key="APEXCLASS:USERTABLEDATA" value="1580400278771" />
                       <entry key="APEXPAGE:CALLOUTVIEWER" value="1579729353319" />
                       <entry key="APEXPAGE:LINKEDINVFPAGE" value="1580254665000" />
                       <entry key="APEXPAGE:SAMPLELINKEDIN" value="1580316611000" />
@@ -117,10 +121,10 @@
                       <entry key="AURADEFINITIONBUNDLE:DYNAMICPAGINATIONPAGE" value="1580316611000" />
                       <entry key="AURADEFINITIONBUNDLE:HANDLEBARSJS" value="1579565156632" />
                       <entry key="AURADEFINITIONBUNDLE:LIGHTNINGTABEXAMPLEPAGE" value="1580316611000" />
-                      <entry key="AURADEFINITIONBUNDLE:LINKEDININTEGRATIONPAGE" value="1580316611000" />
+                      <entry key="AURADEFINITIONBUNDLE:LINKEDININTEGRATIONPAGE" value="1580316924000" />
                       <entry key="AURADEFINITIONBUNDLE:NAVIGATIONPAGE" value="1578001226538" />
                       <entry key="AURADEFINITIONBUNDLE:SHIPPINGLWC" value="1578946563000" />
-                      <entry key="AURADEFINITIONBUNDLE:TESTPAGE" value="1580316611000" />
+                      <entry key="AURADEFINITIONBUNDLE:TESTPAGE" value="1580404194231" />
                       <entry key="AURADEFINITIONBUNDLE:TREEGRIDEXAMPLESCOMPONENT" value="1579795161000" />
                       <entry key="AURADEFINITIONBUNDLE:TREEGRIDEXAMPLESPAGE" value="1579795161000" />
                       <entry key="AURADEFINITIONBUNDLE:TREEGRIDLWCPAGE" value="1580316611000" />
@@ -1088,8 +1092,9 @@
                       <entry key="LIGHTNINGCOMPONENTBUNDLE:RELATEDCONTACTSFROMACCOUNT" value="1580316611000" />
                       <entry key="LIGHTNINGCOMPONENTBUNDLE:SHIPPINGLWC" value="1579041526000" />
                       <entry key="LIGHTNINGCOMPONENTBUNDLE:SUBMISSIONBUTTON" value="1579039979000" />
-                      <entry key="LIGHTNINGCOMPONENTBUNDLE:UIDATEFILTER" value="1580316611000" />
-                      <entry key="LIGHTNINGCOMPONENTBUNDLE:UITABLELWC" value="1580316611000" />
+                      <entry key="LIGHTNINGCOMPONENTBUNDLE:TESTLWC" value="1580399941000" />
+                      <entry key="LIGHTNINGCOMPONENTBUNDLE:UIDATEFILTER" value="1580426441000" />
+                      <entry key="LIGHTNINGCOMPONENTBUNDLE:UITABLELWC" value="1580502708000" />
                       <entry key="LIGHTNINGCOMPONENTBUNDLE:USERINPUTCOMPONENT" value="1580316611000" />
                       <entry key="LIGHTNINGCOMPONENTBUNDLE:VIEWSOURCE" value="1578013662000" />
                       <entry key="LISTVIEW:ACCOUNT.ALLACCOUNTS" value="1580316611000" />
@@ -2408,6 +2413,219 @@
     <property name="jsx.switch.disabled" value="true" />
     <property name="settings.editor.selected.configurable" value="fileTemplates" />
   </component>
+  <component name="RunManager" selected="Apex Unit Tests.LeadOpportunityTableTest.TestGetUserData">
+    <configuration name="LeadOpportunityTableTest" type="com.illuminatedcloud.intellij" factoryName="Apex Unit Tests" temporary="true" show_console_on_std_err="false" show_console_on_std_out="false">
+      <option name="allTests" value="false" />
+      <option name="allowRunningInParallel" value="false" />
+      <option name="apexLogLevel" value="FINEST" />
+      <option name="calloutsLogLevel" value="FINEST" />
+      <option name="connectionName" value="jescoinc@playground.com" />
+      <option name="connectionType" value="MDAPI" />
+      <option name="contextConfiguration" value="true" />
+      <option name="databaseLogLevel" value="FINEST" />
+      <option name="logLevelsInitialized" value="true" />
+      <option name="moduleToTestClassNames">
+        <map>
+          <entry key="jescoinc@playground.com1">
+            <value>
+              <set>
+                <option value="LeadOpportunityTableTest" />
+              </set>
+            </value>
+          </entry>
+        </map>
+      </option>
+      <option name="nbaLogLevel" value="FINEST" />
+      <option name="profilingLogLevel" value="FINEST" />
+      <option name="systemLogLevel" value="FINEST" />
+      <option name="testClassToTestMethodNames">
+        <map />
+      </option>
+      <option name="testSuiteName" />
+      <option name="validationLogLevel" value="FINEST" />
+      <option name="visualforceLogLevel" value="FINEST" />
+      <option name="waveLogLevel" value="FINEST" />
+      <option name="workflowLogLevel" value="FINEST" />
+      <method v="2" />
+    </configuration>
+    <configuration name="LeadOpportunityTableTest.TestFilterAllData" type="com.illuminatedcloud.intellij" factoryName="Apex Unit Tests" temporary="true" show_console_on_std_err="false" show_console_on_std_out="false">
+      <option name="allTests" value="false" />
+      <option name="allowRunningInParallel" value="false" />
+      <option name="apexLogLevel" value="DEBUG" />
+      <option name="calloutsLogLevel" value="INFO" />
+      <option name="connectionName" value="jescoinc@playground.com" />
+      <option name="connectionType" value="MDAPI" />
+      <option name="contextConfiguration" value="true" />
+      <option name="databaseLogLevel" value="INFO" />
+      <option name="logLevelsInitialized" value="false" />
+      <option name="moduleToTestClassNames">
+        <map>
+          <entry key="jescoinc@playground.com1">
+            <value>
+              <set>
+                <option value="LeadOpportunityTableTest" />
+              </set>
+            </value>
+          </entry>
+        </map>
+      </option>
+      <option name="nbaLogLevel" value="INFO" />
+      <option name="profilingLogLevel" value="INFO" />
+      <option name="systemLogLevel" value="DEBUG" />
+      <option name="testClassToTestMethodNames">
+        <map>
+          <entry key="LeadOpportunityTableTest">
+            <value>
+              <set>
+                <option value="TestFilterAllData" />
+              </set>
+            </value>
+          </entry>
+        </map>
+      </option>
+      <option name="testSuiteName" />
+      <option name="validationLogLevel" value="INFO" />
+      <option name="visualforceLogLevel" value="INFO" />
+      <option name="waveLogLevel" value="INFO" />
+      <option name="workflowLogLevel" value="INFO" />
+      <method v="2" />
+    </configuration>
+    <configuration name="LeadOpportunityTableTest.TestFilterAllDataCount" type="com.illuminatedcloud.intellij" factoryName="Apex Unit Tests" temporary="true" show_console_on_std_err="false" show_console_on_std_out="false">
+      <option name="allTests" value="false" />
+      <option name="allowRunningInParallel" value="false" />
+      <option name="apexLogLevel" value="DEBUG" />
+      <option name="calloutsLogLevel" value="INFO" />
+      <option name="connectionName" value="jescoinc@playground.com" />
+      <option name="connectionType" value="MDAPI" />
+      <option name="contextConfiguration" value="true" />
+      <option name="databaseLogLevel" value="INFO" />
+      <option name="logLevelsInitialized" value="false" />
+      <option name="moduleToTestClassNames">
+        <map>
+          <entry key="jescoinc@playground.com1">
+            <value>
+              <set>
+                <option value="LeadOpportunityTableTest" />
+              </set>
+            </value>
+          </entry>
+        </map>
+      </option>
+      <option name="nbaLogLevel" value="INFO" />
+      <option name="profilingLogLevel" value="INFO" />
+      <option name="systemLogLevel" value="DEBUG" />
+      <option name="testClassToTestMethodNames">
+        <map>
+          <entry key="LeadOpportunityTableTest">
+            <value>
+              <set>
+                <option value="TestFilterAllDataCount" />
+              </set>
+            </value>
+          </entry>
+        </map>
+      </option>
+      <option name="testSuiteName" />
+      <option name="validationLogLevel" value="INFO" />
+      <option name="visualforceLogLevel" value="INFO" />
+      <option name="waveLogLevel" value="INFO" />
+      <option name="workflowLogLevel" value="INFO" />
+      <method v="2" />
+    </configuration>
+    <configuration name="LeadOpportunityTableTest.TestGetOpportunityData" type="com.illuminatedcloud.intellij" factoryName="Apex Unit Tests" temporary="true" show_console_on_std_err="false" show_console_on_std_out="false">
+      <option name="allTests" value="false" />
+      <option name="allowRunningInParallel" value="false" />
+      <option name="apexLogLevel" value="DEBUG" />
+      <option name="calloutsLogLevel" value="INFO" />
+      <option name="connectionName" value="jescoinc@playground.com" />
+      <option name="connectionType" value="MDAPI" />
+      <option name="contextConfiguration" value="true" />
+      <option name="databaseLogLevel" value="INFO" />
+      <option name="logLevelsInitialized" value="false" />
+      <option name="moduleToTestClassNames">
+        <map>
+          <entry key="jescoinc@playground.com1">
+            <value>
+              <set>
+                <option value="LeadOpportunityTableTest" />
+              </set>
+            </value>
+          </entry>
+        </map>
+      </option>
+      <option name="nbaLogLevel" value="INFO" />
+      <option name="profilingLogLevel" value="INFO" />
+      <option name="systemLogLevel" value="DEBUG" />
+      <option name="testClassToTestMethodNames">
+        <map>
+          <entry key="LeadOpportunityTableTest">
+            <value>
+              <set>
+                <option value="TestGetOpportunityData" />
+              </set>
+            </value>
+          </entry>
+        </map>
+      </option>
+      <option name="testSuiteName" />
+      <option name="validationLogLevel" value="INFO" />
+      <option name="visualforceLogLevel" value="INFO" />
+      <option name="waveLogLevel" value="INFO" />
+      <option name="workflowLogLevel" value="INFO" />
+      <method v="2" />
+    </configuration>
+    <configuration name="LeadOpportunityTableTest.TestGetUserData" type="com.illuminatedcloud.intellij" factoryName="Apex Unit Tests" temporary="true" show_console_on_std_err="false" show_console_on_std_out="false">
+      <option name="allTests" value="false" />
+      <option name="allowRunningInParallel" value="false" />
+      <option name="apexLogLevel" value="DEBUG" />
+      <option name="calloutsLogLevel" value="INFO" />
+      <option name="connectionName" value="jescoinc@playground.com" />
+      <option name="connectionType" value="MDAPI" />
+      <option name="contextConfiguration" value="true" />
+      <option name="databaseLogLevel" value="INFO" />
+      <option name="logLevelsInitialized" value="false" />
+      <option name="moduleToTestClassNames">
+        <map>
+          <entry key="jescoinc@playground.com1">
+            <value>
+              <set>
+                <option value="LeadOpportunityTableTest" />
+              </set>
+            </value>
+          </entry>
+        </map>
+      </option>
+      <option name="nbaLogLevel" value="INFO" />
+      <option name="profilingLogLevel" value="INFO" />
+      <option name="systemLogLevel" value="DEBUG" />
+      <option name="testClassToTestMethodNames">
+        <map>
+          <entry key="LeadOpportunityTableTest">
+            <value>
+              <set>
+                <option value="TestGetUserData" />
+              </set>
+            </value>
+          </entry>
+        </map>
+      </option>
+      <option name="testSuiteName" />
+      <option name="validationLogLevel" value="INFO" />
+      <option name="visualforceLogLevel" value="INFO" />
+      <option name="waveLogLevel" value="INFO" />
+      <option name="workflowLogLevel" value="INFO" />
+      <method v="2" />
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Apex Unit Tests.LeadOpportunityTableTest.TestGetUserData" />
+        <item itemvalue="Apex Unit Tests.LeadOpportunityTableTest" />
+        <item itemvalue="Apex Unit Tests.LeadOpportunityTableTest.TestFilterAllDataCount" />
+        <item itemvalue="Apex Unit Tests.LeadOpportunityTableTest.TestFilterAllData" />
+        <item itemvalue="Apex Unit Tests.LeadOpportunityTableTest.TestGetOpportunityData" />
+      </list>
+    </recent_temporary>
+  </component>
   <component name="ServiceViewManager">
     <option name="viewStates">
       <list>
@@ -2469,7 +2687,11 @@
       <workItem from="1580246450943" duration="479000" />
       <workItem from="1580250044602" duration="1050000" />
       <workItem from="1580255041744" duration="40000" />
-      <workItem from="1580309954062" duration="4617000" />
+      <workItem from="1580309954062" duration="8728000" />
+      <workItem from="1580321131028" duration="17291000" />
+      <workItem from="1580397550353" duration="23586000" />
+      <workItem from="1580492274373" duration="1217000" />
+      <workItem from="1580502142731" duration="570000" />
     </task>
     <task id="LOCAL-00001" summary="Added comments to the TestResults, seeResults method to understand why the code is there and the issues associated with it.">
       <created>1577123606141</created>
@@ -2625,7 +2847,14 @@
       <option name="project" value="LOCAL" />
       <updated>1580254966302</updated>
     </task>
-    <option name="localTasksCounter" value="23" />
+    <task id="LOCAL-00023" summary="Removed unused classes and added a little documentation.">
+      <created>1580316702859</created>
+      <option name="number" value="00023" />
+      <option name="presentableId" value="LOCAL-00023" />
+      <option name="project" value="LOCAL" />
+      <updated>1580316702859</updated>
+    </task>
+    <option name="localTasksCounter" value="24" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -2650,7 +2879,8 @@
     <MESSAGE value="created an Aura page to house the lightningTabExample LWC to be able to view outside of the org.&#10;Implemented the GetSalesforceData class which does apex SOQL queries for the Account, Contact, Opportunity, Lead and User Objects with a limit of 10 per.&#10;Created the lightningTab Lightning Web Component. The JS file does the proper calls to the Apex class and queries the schema values which will properly store the information recovered.&#10;The LightningTab html page does the calls to the tracked variables from the JS page which will then display the data on the page." />
     <MESSAGE value="More components created for various tasks." />
     <MESSAGE value="Removed unused classes and added a little documentation." />
-    <option name="LAST_COMMIT_MESSAGE" value="Removed unused classes and added a little documentation." />
+    <MESSAGE value="Removed classes and components that were unused.&#10;Added proper classes and components.&#10;Test class needs a little TLC to make it up to date with the new code for the class it works with." />
+    <option name="LAST_COMMIT_MESSAGE" value="Removed classes and components that were unused.&#10;Added proper classes and components.&#10;Test class needs a little TLC to make it up to date with the new code for the class it works with." />
   </component>
   <component name="WindowStateProjectService">
     <state x="220" y="46" key="#Illuminated_Cloud" timestamp="1580168496985">
@@ -2676,13 +2906,13 @@
     </state>
     <state x="408" y="197" key="#com.intellij.openapi.updateSettings.impl.PluginUpdateInfoDialog/0.23.1440.877/1440.23.1920.1057/3360.23.1440.877@0.23.1440.877" timestamp="1580227616393" />
     <state x="408" y="197" key="#com.intellij.openapi.updateSettings.impl.PluginUpdateInfoDialog/0.23.1440.877/3360.23.1440.877/1440.23.1920.1057@0.23.1440.877" timestamp="1579732853776" />
-    <state x="0" y="23" key="CommitChangelistDialog2" timestamp="1580254966162">
+    <state x="0" y="23" key="CommitChangelistDialog2" timestamp="1580502617576">
       <screen x="0" y="23" width="1440" height="877" />
     </state>
     <state x="1440" y="23" key="CommitChangelistDialog2/0.23.1440.877/1440.23.1440.877@1440.23.1440.877" timestamp="1579033529917" />
-    <state x="0" y="23" key="CommitChangelistDialog2/0.23.1440.877/1440.23.1600.877/3040.23.1440.877@0.23.1440.877" timestamp="1580254966162" />
+    <state x="0" y="23" key="CommitChangelistDialog2/0.23.1440.877/1440.23.1600.877/3040.23.1440.877@0.23.1440.877" timestamp="1580316702617" />
     <state x="1692" y="121" key="CommitChangelistDialog2/0.23.1440.877/1440.23.1920.1057/3360.23.1440.877@0.23.1440.877" timestamp="1579560843733" />
-    <state x="0" y="23" key="CommitChangelistDialog2/0.23.1440.877@0.23.1440.877" timestamp="1578989089675" />
+    <state x="0" y="23" key="CommitChangelistDialog2/0.23.1440.877@0.23.1440.877" timestamp="1580502617576" />
     <state x="47" y="100" width="1152" height="701" key="DiffContextDialog" timestamp="1580316689231">
       <screen x="0" y="23" width="1440" height="877" />
     </state>
@@ -2697,30 +2927,51 @@
       <screen x="0" y="23" width="1440" height="877" />
     </state>
     <state x="478" y="344" width="484" height="333" key="Github.ShareDialog/0.23.1440.877/1440.23.1600.877/3040.23.1440.877@0.23.1440.877" timestamp="1580250149038" />
+    <state width="1388" height="598" key="GridCell.Tab.0.bottom" timestamp="1580356631649">
+      <screen x="-1920" y="23" width="1920" height="1057" />
+    </state>
+    <state width="1388" height="598" key="GridCell.Tab.0.bottom/0.23.1440.877/-1920.23.1920.1057@-1920.23.1920.1057" timestamp="1580356631649" />
+    <state width="1388" height="598" key="GridCell.Tab.0.bottom/0.23.1440.877/1440.23.1600.877/3040.23.1440.877@0.23.1440.877" timestamp="1580329734492" />
+    <state width="1388" height="598" key="GridCell.Tab.0.center" timestamp="1580356631648">
+      <screen x="-1920" y="23" width="1920" height="1057" />
+    </state>
+    <state width="1388" height="598" key="GridCell.Tab.0.center/0.23.1440.877/-1920.23.1920.1057@-1920.23.1920.1057" timestamp="1580356631648" />
+    <state width="1388" height="598" key="GridCell.Tab.0.center/0.23.1440.877/1440.23.1600.877/3040.23.1440.877@0.23.1440.877" timestamp="1580329734491" />
+    <state width="1388" height="598" key="GridCell.Tab.0.left" timestamp="1580356631646">
+      <screen x="-1920" y="23" width="1920" height="1057" />
+    </state>
+    <state width="1388" height="598" key="GridCell.Tab.0.left/0.23.1440.877/-1920.23.1920.1057@-1920.23.1920.1057" timestamp="1580356631646" />
+    <state width="1388" height="598" key="GridCell.Tab.0.left/0.23.1440.877/1440.23.1600.877/3040.23.1440.877@0.23.1440.877" timestamp="1580329734490" />
+    <state width="1388" height="598" key="GridCell.Tab.0.right" timestamp="1580356631648">
+      <screen x="-1920" y="23" width="1920" height="1057" />
+    </state>
+    <state width="1388" height="598" key="GridCell.Tab.0.right/0.23.1440.877/-1920.23.1920.1057@-1920.23.1920.1057" timestamp="1580356631648" />
+    <state width="1388" height="598" key="GridCell.Tab.0.right/0.23.1440.877/1440.23.1600.877/3040.23.1440.877@0.23.1440.877" timestamp="1580329734492" />
     <state x="0" y="23" width="1154" height="877" key="SettingsEditor" timestamp="1580247018386">
       <screen x="0" y="23" width="1440" height="877" />
     </state>
     <state x="0" y="23" width="1154" height="877" key="SettingsEditor/0.23.1440.877/1440.23.1600.877/3040.23.1440.877@0.23.1440.877" timestamp="1580247018386" />
-    <state x="220" y="138" key="Vcs.Push.Dialog.v2" timestamp="1580254995694">
+    <state x="220" y="138" key="Vcs.Push.Dialog.v2" timestamp="1580316808046">
       <screen x="0" y="23" width="1440" height="877" />
     </state>
     <state x="1660" y="138" key="Vcs.Push.Dialog.v2/0.23.1440.877/1440.23.1440.877@1440.23.1440.877" timestamp="1578941638925" />
-    <state x="220" y="138" key="Vcs.Push.Dialog.v2/0.23.1440.877/1440.23.1600.877/3040.23.1440.877@0.23.1440.877" timestamp="1580254995694" />
+    <state x="220" y="138" key="Vcs.Push.Dialog.v2/0.23.1440.877/1440.23.1600.877/3040.23.1440.877@0.23.1440.877" timestamp="1580316808046" />
     <state x="220" y="138" key="Vcs.Push.Dialog.v2/0.23.1440.877/1440.23.1920.1057/3360.23.1440.877@0.23.1440.877" timestamp="1579560860948" />
     <state x="220" y="138" key="Vcs.Push.Dialog.v2/0.23.1440.877@0.23.1440.877" timestamp="1578989100888" />
     <state x="100" y="123" width="1240" height="677" key="com.intellij.dvcs.ui.CompareBranchesDialog" timestamp="1580250310355">
       <screen x="0" y="23" width="1440" height="877" />
     </state>
     <state x="100" y="123" width="1240" height="677" key="com.intellij.dvcs.ui.CompareBranchesDialog/0.23.1440.877/1440.23.1600.877/3040.23.1440.877@0.23.1440.877" timestamp="1580250310355" />
-    <state x="474" y="368" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1580255010631">
+    <state x="474" y="368" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1580316758074">
       <screen x="0" y="23" width="1440" height="877" />
     </state>
-    <state x="474" y="368" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2/0.23.1440.877/1440.23.1600.877/3040.23.1440.877@0.23.1440.877" timestamp="1580255010631" />
+    <state x="474" y="368" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2/0.23.1440.877/1440.23.1600.877/3040.23.1440.877@0.23.1440.877" timestamp="1580316758074" />
     <state x="474" y="368" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2/0.23.1440.877/1440.23.1920.1057/3360.23.1440.877@0.23.1440.877" timestamp="1579560851947" />
     <state x="474" y="368" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2/0.23.1440.877@0.23.1440.877" timestamp="1578879086218" />
-    <state x="3351" y="23" width="1452" height="877" maximized="true" key="dock-window-1" timestamp="1580236654909">
-      <screen x="3360" y="23" width="1440" height="877" />
+    <state x="8" y="41" width="1422" height="856" maximized="true" key="dock-window-1" timestamp="1580415629510">
+      <screen x="0" y="23" width="1440" height="877" />
     </state>
+    <state x="8" y="41" width="1422" height="856" maximized="true" key="dock-window-1/0.23.1440.877/-1600.23.1600.877/1440.23.1440.877@-1600.23.1600.877" timestamp="1580415629510" />
     <state x="522" y="215" width="1094" height="594" key="dock-window-1/0.23.1440.877/1440.23.1440.877@0.23.1440.877" timestamp="1578679994863" />
     <state x="3351" y="23" width="1452" height="877" maximized="true" key="dock-window-1/0.23.1440.877/1440.23.1920.1057/3360.23.1440.877@0.23.1440.877" timestamp="1580236654909" />
     <state x="3360" y="23" width="1415" height="875" maximized="true" key="dock-window-1/0.23.1440.877/3360.23.1440.877/1440.23.1920.1057@0.23.1440.877" timestamp="1579889327517" />
@@ -2743,5 +2994,8 @@
     </state>
     <state x="1741" y="23" width="838" height="1032" key="search.everywhere.popup/0.23.1440.877/1440.23.1440.877@1440.23.1440.877" timestamp="1578949298809" />
     <state x="301" y="23" width="838" height="72" key="search.everywhere.popup/0.23.1440.877/3360.23.1440.877/1440.23.1920.1057@0.23.1440.877" timestamp="1579732306507" />
+  </component>
+  <component name="com.intellij.coverage.CoverageDataManagerImpl">
+    <SUITE FILE_PATH="coverage/jescoinc_playground_com1$LeadOpportunityTableTest_TestGetUserData.null" NAME="jescoinc@playground.com Coverage Results" MODIFIED="1580329690816" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="Apex" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="true" PROJECT_NAME="jescoinc@playground.com1" CONNECTION_NAME="jescoinc@playground.com" CONNECTION_TYPE="MDAPI" />
   </component>
 </project>

@@ -4,6 +4,7 @@
 
 public with sharing class UITableCustomClass {
     public class DataWrapper {
+        public String OwnerId {get; set;}
         @AuraEnabled public String OwnerName { get; set; }
         @AuraEnabled public Double OpportunityAmount { get; set; }
         @AuraEnabled public Double LeadAmount { get; set; }
@@ -67,6 +68,7 @@ public with sharing class UITableCustomClass {
         Date mCreatedDate;
         Decimal count = 0.0;
         List<DataWrapper> filteredData = new List<DataWrapper>();
+        List<DataWrapper> filteredResults = new List<DataWrapper>();
         // Notes: In order to reduce the lines of code per function,
         // I have opted to break it up to make it more readable.
         List<User> users = getUsers();
@@ -75,10 +77,11 @@ public with sharing class UITableCustomClass {
         // Not a fan of deeply nested for loops, but in this case, it is needed
         // so we can accurately filter our results
         for(Integer i = 0; i < users.size(); i++) {
+            wrapper = new DataWrapper();
             leads = getLeads(users[i].Id);
             opportunities = getOpportunities(users[i].Id);
-            for (Opportunity opportunity : opportunities) {
-                for (Lead lead : leads) {
+            for (Lead lead : leads) {
+                for (Opportunity opportunity : opportunities) {
                     // Notes: If statements follow for filtering down further.
                     if (users[i].Id == opportunity.OwnerId && users[i].Id == lead.OwnerId) {
                         // the filter result should now only have
@@ -91,6 +94,8 @@ public with sharing class UITableCustomClass {
                                 if (closedDate == closeDate) {
                                     // the filter result should also only have
                                     // Opportunities where the stage is Closed Won.
+
+                                    wrapper.OwnerId = users[i].Id;
                                     count += opportunity.Amount;
                                     name = users[i].Name;
                                     oppAmount += 1;
@@ -100,12 +105,11 @@ public with sharing class UITableCustomClass {
                                     // having wrapper and adding the filterData here causes
                                     // all data for Rebecca and Wesker to show up.
                                     // Should only have a single instance of Rebecca's and Wesker's data
-                                    wrapper = new DataWrapper();
                                     wrapper.OwnerName = name;
                                     wrapper.OpportunityAmount = oppAmount;
                                     wrapper.LeadAmount = leadAmount;
-                                    wrapper.ConversionRate = convRate;
-                                    wrapper.MaxCreatedDate = mCreatedDate;
+                                    wrapper.ConversionRate = (oppAmount / leadAmount);
+                                    wrapper.MaxCreatedDate = lead.CreatedDate.date();
                                     wrapper.TotalValue = count;
                                     filteredData.add(wrapper);
                                 }
@@ -114,13 +118,27 @@ public with sharing class UITableCustomClass {
                     }
                 }
             }
-            // filterData and wrapper here causes a dual instance of Wesker's data to appear
-            // and 7 instances of Rebecca's data to appear
         }
-        // filterData here causes only a single instance of Wesker's data to appear
-        // Rebecca's data does not appear at all.
 
-        System.debug(filteredData);
-        return filteredData;
+        // Creating a set to remove all duplicates.
+        Set<DataWrapper> dataSet = new Set<DataWrapper>();
+
+        // loop through the filtered data to add the non duplicates to the set.
+        for (DataWrapper dWrapper : filteredData) {
+            dataSet.add(dWrapper);
+        }
+
+        // loop through the set to add to our displayable list.
+        for (DataWrapper finalData : dataSet) {
+            filteredResults.add(finalData);
+        }
+
+        System.debug('filtered Data size: ' + filteredData.size());
+        System.debug('filtered Data: ' + filteredData);
+        System.debug('dataSet size: ' + dataSet.size());
+        System.debug('dataSet Data: ' + dataSet);
+        System.debug('filtered Results size: ' + filteredResults.size());
+        System.debug('filtered Results: ' + filteredResults);
+        return filteredResults;
     }
 }

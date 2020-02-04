@@ -3,10 +3,7 @@
   <component name="ChangeListManager">
     <list default="true" id="58014b4f-abbc-41b5-89a6-3da08b72349a" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/classes/LinkedInCrtl.cls" beforeDir="false" afterPath="$PROJECT_DIR$/src/classes/LinkedInCrtl.cls" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/classes/UITableCustomClass.cls" beforeDir="false" afterPath="$PROJECT_DIR$/src/classes/UITableCustomClass.cls" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/lwc/uiTableLWC/uiTableLWC.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/lwc/uiTableLWC/uiTableLWC.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/lwc/uiTableLWC/uiTableLWC.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/lwc/uiTableLWC/uiTableLWC.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -99,7 +96,7 @@
                       <entry key="APEXCLASS:TESTRESULTS" value="1579564087000" />
                       <entry key="APEXCLASS:TREEGRIDEXAMPLES" value="1579564087000" />
                       <entry key="APEXCLASS:TREEGRIDWRAPPEREXAMPLE" value="1577223919931" />
-                      <entry key="APEXCLASS:UITABLECUSTOMCLASS" value="1580779868965" />
+                      <entry key="APEXCLASS:UITABLECUSTOMCLASS" value="1580786937662" />
                       <entry key="APEXCLASS:UITABLEDATA" value="1580410524615" />
                       <entry key="APEXCLASS:USERTABLEDATA" value="1580400278771" />
                       <entry key="APEXPAGE:CALLOUTVIEWER" value="1579729353319" />
@@ -2698,7 +2695,7 @@
       <workItem from="1580492274373" duration="1217000" />
       <workItem from="1580502142731" duration="878000" />
       <workItem from="1580615713633" duration="9157000" />
-      <workItem from="1580751508449" duration="17039000" />
+      <workItem from="1580751508449" duration="23627000" />
     </task>
     <task id="LOCAL-00001" summary="Added comments to the TestResults, seeResults method to understand why the code is there and the issues associated with it.">
       <created>1577123606141</created>
@@ -2868,7 +2865,14 @@
       <option name="project" value="LOCAL" />
       <updated>1580502732460</updated>
     </task>
-    <option name="localTasksCounter" value="25" />
+    <task id="LOCAL-00025" summary="Added more code to the repo.">
+      <created>1580780293618</created>
+      <option name="number" value="00025" />
+      <option name="presentableId" value="LOCAL-00025" />
+      <option name="project" value="LOCAL" />
+      <updated>1580780293618</updated>
+    </task>
+    <option name="localTasksCounter" value="26" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -2894,7 +2898,8 @@
     <MESSAGE value="More components created for various tasks." />
     <MESSAGE value="Removed unused classes and added a little documentation." />
     <MESSAGE value="Removed classes and components that were unused.&#10;Added proper classes and components.&#10;Test class needs a little TLC to make it up to date with the new code for the class it works with." />
-    <option name="LAST_COMMIT_MESSAGE" value="Removed classes and components that were unused.&#10;Added proper classes and components.&#10;Test class needs a little TLC to make it up to date with the new code for the class it works with." />
+    <MESSAGE value="Added more code to the repo." />
+    <option name="LAST_COMMIT_MESSAGE" value="Added more code to the repo." />
   </component>
   <component name="WindowStateProjectService">
     <state x="220" y="46" key="#Illuminated_Cloud" timestamp="1580168496985">
@@ -2920,13 +2925,13 @@
     </state>
     <state x="408" y="197" key="#com.intellij.openapi.updateSettings.impl.PluginUpdateInfoDialog/0.23.1440.877/1440.23.1920.1057/3360.23.1440.877@0.23.1440.877" timestamp="1580227616393" />
     <state x="408" y="197" key="#com.intellij.openapi.updateSettings.impl.PluginUpdateInfoDialog/0.23.1440.877/3360.23.1440.877/1440.23.1920.1057@0.23.1440.877" timestamp="1579732853776" />
-    <state x="0" y="23" key="CommitChangelistDialog2" timestamp="1580502732262">
+    <state x="0" y="23" key="CommitChangelistDialog2" timestamp="1580780293186">
       <screen x="0" y="23" width="1440" height="877" />
     </state>
     <state x="1440" y="23" key="CommitChangelistDialog2/0.23.1440.877/1440.23.1440.877@1440.23.1440.877" timestamp="1579033529917" />
     <state x="0" y="23" key="CommitChangelistDialog2/0.23.1440.877/1440.23.1600.877/3040.23.1440.877@0.23.1440.877" timestamp="1580316702617" />
     <state x="1692" y="121" key="CommitChangelistDialog2/0.23.1440.877/1440.23.1920.1057/3360.23.1440.877@0.23.1440.877" timestamp="1579560843733" />
-    <state x="0" y="23" key="CommitChangelistDialog2/0.23.1440.877@0.23.1440.877" timestamp="1580502732262" />
+    <state x="0" y="23" key="CommitChangelistDialog2/0.23.1440.877@0.23.1440.877" timestamp="1580780293186" />
     <state x="47" y="100" width="1152" height="701" key="DiffContextDialog" timestamp="1580316689231">
       <screen x="0" y="23" width="1440" height="877" />
     </state>
@@ -2965,23 +2970,23 @@
       <screen x="0" y="23" width="1440" height="877" />
     </state>
     <state x="0" y="23" width="1154" height="877" key="SettingsEditor/0.23.1440.877/1440.23.1600.877/3040.23.1440.877@0.23.1440.877" timestamp="1580771141598" />
-    <state x="220" y="138" key="Vcs.Push.Dialog.v2" timestamp="1580502746425">
+    <state x="220" y="138" key="Vcs.Push.Dialog.v2" timestamp="1580780303387">
       <screen x="0" y="23" width="1440" height="877" />
     </state>
     <state x="1660" y="138" key="Vcs.Push.Dialog.v2/0.23.1440.877/1440.23.1440.877@1440.23.1440.877" timestamp="1578941638925" />
     <state x="220" y="138" key="Vcs.Push.Dialog.v2/0.23.1440.877/1440.23.1600.877/3040.23.1440.877@0.23.1440.877" timestamp="1580316808046" />
     <state x="220" y="138" key="Vcs.Push.Dialog.v2/0.23.1440.877/1440.23.1920.1057/3360.23.1440.877@0.23.1440.877" timestamp="1579560860948" />
-    <state x="220" y="138" key="Vcs.Push.Dialog.v2/0.23.1440.877@0.23.1440.877" timestamp="1580502746425" />
+    <state x="220" y="138" key="Vcs.Push.Dialog.v2/0.23.1440.877@0.23.1440.877" timestamp="1580780303387" />
     <state x="100" y="123" width="1240" height="677" key="com.intellij.dvcs.ui.CompareBranchesDialog" timestamp="1580250310355">
       <screen x="0" y="23" width="1440" height="877" />
     </state>
     <state x="100" y="123" width="1240" height="677" key="com.intellij.dvcs.ui.CompareBranchesDialog/0.23.1440.877/1440.23.1600.877/3040.23.1440.877@0.23.1440.877" timestamp="1580250310355" />
-    <state x="474" y="368" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1580502737134">
+    <state x="474" y="368" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1580780296730">
       <screen x="0" y="23" width="1440" height="877" />
     </state>
     <state x="474" y="368" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2/0.23.1440.877/1440.23.1600.877/3040.23.1440.877@0.23.1440.877" timestamp="1580316758074" />
     <state x="474" y="368" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2/0.23.1440.877/1440.23.1920.1057/3360.23.1440.877@0.23.1440.877" timestamp="1579560851947" />
-    <state x="474" y="368" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2/0.23.1440.877@0.23.1440.877" timestamp="1580502737134" />
+    <state x="474" y="368" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2/0.23.1440.877@0.23.1440.877" timestamp="1580780296730" />
     <state x="8" y="41" width="1422" height="856" maximized="true" key="dock-window-1" timestamp="1580415629510">
       <screen x="0" y="23" width="1440" height="877" />
     </state>

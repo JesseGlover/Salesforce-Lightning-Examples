@@ -15,6 +15,13 @@ public class LinkedInCrtl{
         fetchLinkedInEmailDetails();
     }
 
+    public static void test() {
+        LinkedInParser lwrapper = new LinkedInParser();
+        LinkedInCrtl crtl = new LinkedInCrtl();
+        crtl.fetchLinkedInDetails();
+        crtl.fetchLinkedInEmailDetails();
+    }
+
     /**
     * Grabs the Email details for Linkedin from the OAuth2 connection
     * Utilizes callout and OAuth2 for the Linkedin API V2

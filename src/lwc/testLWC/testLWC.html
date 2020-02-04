@@ -1,0 +1,37 @@
+<!--
+ - Created by gamedevmadeeasy on 1/30/20.
+ -->
+
+<!-- Test Lwc -->
+<template>
+    <lightning-card title="Wrapper Class in Lightning Web Components">
+        <template if:true={data}>
+            <table class="slds-table slds-table_bordered slds-table_cell-buffer slds-table_col-bordered">
+                <thead>
+                <tr class="slds-text-title_caps">
+                    <th scope="col">
+                        <div title="Key">Account Name</div>
+                    </th>
+                    <th scope="col">
+                        <div title="Value">Account Related Contacts</div>
+                    </th>
+                </tr>
+                </thead>
+                <tbody>
+                <template for:each={data} for:item="keyValue">
+                    <tr key={keyValue.Id}>
+                        <th scope="col">
+                            <div>{keyValue.objAcc.Name}</div>
+                        </th>
+                        <th scope="col">
+                            <template for:each={keyValue.lstCons} for:item="con">
+                                <div key={con.Id}>{con.Name}</div>
+                            </template>
+                        </th>
+                    </tr>
+                </template>
+                </tbody>
+            </table>
+        </template>
+    </lightning-card>
+</template>

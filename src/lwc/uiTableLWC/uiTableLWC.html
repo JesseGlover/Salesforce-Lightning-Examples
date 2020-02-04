@@ -5,6 +5,24 @@
 <!-- Ui Table Lwc -->
 <template>
     <lightning-card title="">
+        <lightning-layout horizontal-align=center multiple-rows=false>
+            <div class="DateCreated">
+                <lightning-input type="date"
+                         name="Date Created"
+                         label="Date Created"
+                         required value={createdDate}
+                         onchange={onDateCreatedChange}>
+                </lightning-input>
+            </div>
+            <div class="DateClosed">
+                <lightning-input type="date"
+                         name="DateClosed"
+                         label="Date Closed"
+                         required value={closedDate}
+                                 onchange={onDateClosedChange}>
+                </lightning-input>
+            </div>
+        </lightning-layout>
         <lightning-datatable
                 key-field="id"
                 columns={columns}

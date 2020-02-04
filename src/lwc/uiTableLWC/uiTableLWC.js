@@ -8,6 +8,8 @@ import customFilter from '@salesforce/apex/UITableCustomClass.filterAllData';
 export default class UiTableLwc extends LightningElement {
     @track testData;
     @track error;
+    @track createdDate;
+    @track closedDate;
     @track labelName = 'Load Data';
     @track columns = [
         {label: 'Owner', fieldName: 'OwnerName', type: 'text', cellAttributes: { alignment: 'left' }},
@@ -18,16 +20,27 @@ export default class UiTableLwc extends LightningElement {
         {label: 'Total Val (Opp)', fieldName: 'TotalValue' , type: 'number', cellAttributes: { alignment: 'left' }}
     ];
 
-    @wire(customFilter)
+    @wire(customFilter,
+        {createdDate : '$createdDate', closedDate : '$closedDate'})
     WiredCustom ({error, data}) {
         if (data) {
-            this.testData = data;
-            window.console.log(JSON.stringify(this.testData));
-        }
-        else if (error) {
-            this.error = error;
-            window.console.log('error: ' + JSON.stringify(error));
+            customFilter({createdDate : this.createdDate, closedDate : this.closedDate})
+                .then (result => {
+                    this.testData = result;
+                    console.log(this.testData);
+                })
+                .catch (error => {
+                    this.error = error;
+                });
         }
     }
 
+
+    onDateCreatedChange(event) {
+        this.createdDate = event.target.value;
+    }
+
+    onDateClosedChange(event) {
+        this.closedDate = event.target.value;
+    }
 }
